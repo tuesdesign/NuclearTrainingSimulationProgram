@@ -28,6 +28,13 @@ public class PersonNavigator : MonoBehaviour
 
     [SerializeField]
     private Animator animator; // The animator component for the agent
+
+    //[SerializeField]
+    //private AnimationClip IdleAnimation; // The animator component for the agent
+
+    //[SerializeField]
+    //private AnimationClip WalkAnimation; // The animator component for the agent
+
     private Transform target; // The current target waypoint
 
 
@@ -62,8 +69,10 @@ public class PersonNavigator : MonoBehaviour
     {
         agent.isStopped = true; // Stop
         animator.SetBool("Walking", false); // Set the animator to not walking
+        //animator.Play("Idle"); // Play the idle animation
         yield return new WaitForSeconds(WaitTime); // Wait
         agent.isStopped = false; // Start
+        //animator.Play("Walking"); // Play the walk animation
         animator.SetBool("Walking", true); // Set the animator to walking
         agent.SetDestination(target.position); // Then, set the agent's destination to it
     }
