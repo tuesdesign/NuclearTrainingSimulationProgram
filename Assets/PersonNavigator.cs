@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI; 
 
+
 [RequireComponent(typeof(NavMeshAgent))] // Require a NavMeshAgent component to be attached to the GameObject
 public class PersonNavigator : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class PersonNavigator : MonoBehaviour
     [SerializeField, Range(0.1f, 3f)]
     private float WaitTime = 1f; // The time the agent waits at a waypoint before moving to the next one
 
+    [SerializeField]
+    private Animator animator; // The animator component for the agent
     private Transform target; // The current target waypoint
 
 
@@ -58,8 +61,10 @@ public class PersonNavigator : MonoBehaviour
     IEnumerator WaitAtWaypoint()
     {
         agent.isStopped = true; // Stop
+        animator.SetBool("Walking", false); // Set the animator to not walking
         yield return new WaitForSeconds(WaitTime); // Wait
         agent.isStopped = false; // Start
+        animator.SetBool("Walking", true); // Set the animator to walking
         agent.SetDestination(target.position); // Then, set the agent's destination to it
     }
 
