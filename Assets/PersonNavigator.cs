@@ -41,6 +41,7 @@ public class PersonNavigator : MonoBehaviour
     void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        getAllTargets();
         SetNewTarget();
     }
 
@@ -48,6 +49,17 @@ public class PersonNavigator : MonoBehaviour
     {
         if (DEBUG) print("Getting random waypoint");
         return waypoints[Random.Range(0, waypoints.Count)]; // Return a random waypoint from the list
+    }
+
+    public void getAllTargets()
+    {
+        // reset waypoints
+        waypoints.Clear();
+        // find all objects with POI tag and add them to waypoints
+        foreach(GameObject poi in GameObject.FindGameObjectsWithTag("POI"))
+        {
+            waypoints.Add(poi.transform);
+        }
     }
 
     bool IsAtTarget()
