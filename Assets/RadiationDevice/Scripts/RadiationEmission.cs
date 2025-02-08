@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RadiationEmission : MonoBehaviour
@@ -8,10 +9,27 @@ public class RadiationEmission : MonoBehaviour
     float directions = 6;
 
     Vector3 direction;
+    LayerMask detectorMask;
+
+
+    [SerializeField]
+    float size;
+
+    [SerializeField]
+    float strength;
+
+
+
 
     // Start is called before the first frame update
     void Start()
     {
+        detectorMask = LayerMask.GetMask("Detector");
+    }
+
+    private void Awake()
+    {
+        transform.localScale = new Vector3(1f,1f,1f)*size;
     }
 
     // Update is called once per frame
@@ -45,7 +63,7 @@ public class RadiationEmission : MonoBehaviour
                     break;
             }
 
-            if (Physics.Raycast(transform.position, direction, out RaycastHit hitInfo, 20f))
+            if (Physics.Raycast(transform.position, direction, out RaycastHit hitInfo, 20f, detectorMask))
             {
                 if (hitInfo.transform.CompareTag("Detector"))
                 {
@@ -58,5 +76,42 @@ public class RadiationEmission : MonoBehaviour
             
         }
 
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.GetComponent<RadiationDetection>() != null)
+        {
+            other.GetComponent<RadiationDetection>().addRadSource(this);
+        }
+    }
+    
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.GetComponent<RadiationDetection>() != null)
+        {
+            other.GetComponent<RadiationDetection>().removeRadSource(this);
+        }
+
+    }
+
+
+
+
+    //Function for calculating radiation amount
+    public float radiationCalc(float distance)
+    {
+        //strength of radiation multiplied by 
+        float val = strength * (((size / 2) - distance));
+
+        if(val < 0)
+        {
+            val = 0;
+        }
+
+        return val;
+        
     }
 }
