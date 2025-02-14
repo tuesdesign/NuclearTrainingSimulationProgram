@@ -79,6 +79,7 @@ public class RadiationEmission : MonoBehaviour
     }
 
 
+    //if detector enters the trigger, add emitter to source list in detector
     private void OnTriggerEnter(Collider other)
     {
         if(other.GetComponent<RadiationDetection>() != null)
@@ -88,6 +89,7 @@ public class RadiationEmission : MonoBehaviour
     }
     
 
+    //if detector leaves the trigger, remove emitter from the source list in detector
     private void OnTriggerExit(Collider other)
     {
         if (other.GetComponent<RadiationDetection>() != null)
@@ -103,7 +105,7 @@ public class RadiationEmission : MonoBehaviour
     //Function for calculating radiation amount
     public float radiationCalc(float distance)
     {
-        //strength of radiation multiplied by 
+        //strength of radiation multiplied by radius subtract distance of detector to emitter
         float val = strength * (((size / 2) - distance));
 
         if(val < 0)
