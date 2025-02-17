@@ -718,7 +718,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mode: {fileID: 323595314}
-  security: []
+  security:
+  - {fileID: 1875417017}
 --- !u!1001 &697529702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1508,6 +1509,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 388680271659665556, guid: 425a21dfc945ab7478c05c79eaa62927, type: 3}
   m_PrefabInstance: {fileID: 8538417558784246019}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1875417017 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 629797394251213735, guid: 425a21dfc945ab7478c05c79eaa62927, type: 3}
+  m_PrefabInstance: {fileID: 8538417558784246019}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875417016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e83ba7349ed0a44ba2c138107ebb5b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &1875417023
 Animator:
   serializedVersion: 5
@@ -1917,7 +1929,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 629797394251213735, guid: 425a21dfc945ab7478c05c79eaa62927, type: 3}
       propertyPath: WaitTime
-      value: 1.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 629797394251213735, guid: 425a21dfc945ab7478c05c79eaa62927, type: 3}
       propertyPath: animator
