@@ -11,10 +11,12 @@ using UnityEngine.AI;
 
 
 [RequireComponent(typeof(NavMeshAgent))] // Require a NavMeshAgent component to be attached to the GameObject
+
 public class ClusterNavigator : MonoBehaviour
 {
     [SerializeField] private int charType = 0;
-        
+    [SerializeField] private NPCRole npcRole;  
+    
     [SerializeField]
     ClusterManager clusterManager;
     
@@ -45,6 +47,7 @@ public class ClusterNavigator : MonoBehaviour
 
     void Start()
     {
+        clusterManager = FindObjectOfType<ClusterManager>();
         agent = GetComponent<NavMeshAgent>();
         SetNewTarget();
     }
@@ -61,7 +64,7 @@ public class ClusterNavigator : MonoBehaviour
 
     void SetNewTarget()
     {
-        target = clusterManager.GetTargetTransform(charType); // Get a new target
+        target = clusterManager.GetTargetTransform(npcRole); // Get a new target
         StartCoroutine(WaitAtWaypoint()); // Start the coroutine to wait at the waypoint
     }
 
@@ -82,4 +85,12 @@ public class ClusterNavigator : MonoBehaviour
     {
         if (IsAtTarget()) SetNewTarget(); // This one's just a sentence.
     }
+}
+
+public enum NPCRole
+{
+    Threat,
+    FirstResponder,
+    Civilian,
+    EventEmployee
 }

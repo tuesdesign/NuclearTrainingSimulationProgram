@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class ClusterManager : MonoBehaviour
@@ -10,12 +11,14 @@ public class ClusterManager : MonoBehaviour
     [SerializeField] private List<Transform> civCluster1Waypoints;
     [SerializeField] private List<Transform> firstRespondersCluster1Waypoints;
     [SerializeField] private List<Transform> threatCluster1Waypoints;
+    [SerializeField] private List<Transform> eventEmployeeCluster1Waypoints;
 
     private void Awake()
     {
         getAllTargets(civCluster1Waypoints, "POI");
         getAllTargets(firstRespondersCluster1Waypoints, "FRPOI");
         getAllTargets(threatCluster1Waypoints, "TPOI");
+        getAllTargets(eventEmployeeCluster1Waypoints, "EPOI");
     }
     
     
@@ -32,19 +35,23 @@ public class ClusterManager : MonoBehaviour
         
     }
 
-    public Transform GetTargetTransform(int type) // we have 3 types of NPCs Civilians(0), First Responders(1) and Threats(2)
+    public Transform GetTargetTransform(NPCRole type) // we have 3 types of NPCs Civilians(0), First Responders(1) and Threats(2)
     {
-        switch (type)
+        if (type == NPCRole.Threat)
         {
-            case 0:
-                return civCluster1Waypoints[Random.Range(0, civCluster1Waypoints.Count)];
-            break;
-            case 1:
-                return firstRespondersCluster1Waypoints[Random.Range(0, firstRespondersCluster1Waypoints.Count)]; 
-            break;
-            case 2:
-                return threatCluster1Waypoints[Random.Range(0, threatCluster1Waypoints.Count)];
-            break;
+            return threatCluster1Waypoints[Random.Range(0, threatCluster1Waypoints.Count)];
+        }
+        else if (type == NPCRole.FirstResponder)
+        {
+            return firstRespondersCluster1Waypoints[Random.Range(0, firstRespondersCluster1Waypoints.Count)]; 
+        }
+        else if (type == NPCRole.Civilian)
+        {
+            return civCluster1Waypoints[Random.Range(0, civCluster1Waypoints.Count)];
+        }
+        else if (type == NPCRole.EventEmployee)
+        {
+            return eventEmployeeCluster1Waypoints[Random.Range(0, civCluster1Waypoints.Count)];
         }
 
         return null;
