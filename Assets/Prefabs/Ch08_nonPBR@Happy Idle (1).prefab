@@ -149,9 +149,11 @@ MonoBehaviour:
   DEBUG: 0
   waypoints:
   - {fileID: 0}
-  acceptableDistance: 1
+  acceptableDistance: 0.5
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 780054074319408197}
+  target: {fileID: 0}
 --- !u!54 &6048847021493655057
 Rigidbody:
   m_ObjectHideFlags: 0
