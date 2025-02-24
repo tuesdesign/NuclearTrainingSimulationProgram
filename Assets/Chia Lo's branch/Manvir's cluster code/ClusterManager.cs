@@ -2,82 +2,56 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class ClusterManager : MonoBehaviour
 {
-    
-    [SerializeField] private List<Transform> civCluster1Waypoints;
-    [SerializeField] private List<Transform> firstRespondersCluster1Waypoints;
-    [SerializeField] private List<Transform> threatCluster1Waypoints;
-    [SerializeField] private List<Transform> eventEmployeeCluster1Waypoints;
-    [SerializeField] private List<Transform> sweepStadiumWaypoints;
-    [SerializeField] private List<Transform> sweepParkingLotWaypoints;
+    [Serializable]
+    public class SubCluster
+    {
+        public int subClusterID;
+        public List<Transform> waypoints;
+    }
+
+    [Serializable]
+    public class Cluster
+    {
+        public NPCRole role;
+        public List<SubCluster> subClusters;
+    }
+
+    [SerializeField] private List<Cluster> clusters;
+    private Dictionary<NPCRole, Dictionary<int, List<Transform>>> clusterWaypoints = new();
 
     private void Awake()
     {
-        /*getAllTargets(civCluster1Waypoints, "POI");
-        getAllTargets(firstRespondersCluster1Waypoints, "FRPOI");
-        getAllTargets(threatCluster1Waypoints, "TPOI");
-        getAllTargets(eventEmployeeCluster1Waypoints, "EPOI");
-        getAllTargets(sweepStadiumWaypoints, "SSPOI");
-        getAllTargets(sweepParkingLotWaypoints, "SPPOI");*/
-    }
-    
-    
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+        LoadWaypoints();
     }
 
-    // Update is called once per frame
-    void Update()
+    public Transform GetTargetTransform(NPCRole type, int subCluster)
     {
-        
-    }
-
-    public Transform GetTargetTransform(NPCRole type) // we have 3 types of NPCs Civilians(0), First Responders(1) and Threats(2)
-    {
-        if (type == NPCRole.Threat)
+        if (clusterWaypoints.TryGetValue(type, out var subClusters) &&
+            subClusters.TryGetValue(subCluster, out var waypoints))
         {
-            return threatCluster1Waypoints[Random.Range(0, threatCluster1Waypoints.Count)];
-        }
-        else if (type == NPCRole.FirstResponder)
-        {
-            return firstRespondersCluster1Waypoints[Random.Range(0, firstRespondersCluster1Waypoints.Count)]; 
-        }
-        else if (type == NPCRole.Civilian)
-        {
-            return civCluster1Waypoints[Random.Range(0, civCluster1Waypoints.Count)];
-        }
-        else if (type == NPCRole.EventEmployee)
-        {
-            return eventEmployeeCluster1Waypoints[Random.Range(0, civCluster1Waypoints.Count)];
-        }
-        else if (type == NPCRole.SweepStadium)
-        {
-            return sweepStadiumWaypoints[Random.Range(0, sweepStadiumWaypoints.Count)];
-        }
-        else if (type == NPCRole.SweepParkingLot)
-        {
-            return sweepParkingLotWaypoints[Random.Range(0, sweepParkingLotWaypoints.Count)];
+            return waypoints.Count > 0 ? waypoints[Random.Range(0, waypoints.Count)] : null;
         }
 
         return null;
     }
-    private void getAllTargets(List<Transform> targets, string type)
+
+    private void LoadWaypoints()
     {
-        // reset waypoints
-        targets.Clear();
-        // find all objects with POI tag and add them to waypoints
-        foreach(GameObject poi in GameObject.FindGameObjectsWithTag(type))
+        foreach (var cluster in clusters)
         {
-            targets.Add(poi.transform);
+            if (!clusterWaypoints.ContainsKey(cluster.role))
+            {
+                clusterWaypoints[cluster.role] = new Dictionary<int, List<Transform>>();
+            }
+
+            foreach (var subCluster in cluster.subClusters)
+            {
+                clusterWaypoints[cluster.role][subCluster.subClusterID] = new List<Transform>(subCluster.waypoints);
+            }
         }
     }
-    
-    
 }

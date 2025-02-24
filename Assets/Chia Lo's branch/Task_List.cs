@@ -8,12 +8,13 @@ public class Task_List : MonoBehaviour
     private int sweepMode = 0;
 
     public TextMeshProUGUI mode;
+	private bool arrest;
 
     [SerializeField] private List<ClusterNavigator> security;
     // Start is called before the first frame update
     void Start()
     {
-        mode.text = "Sweep Mode";
+        
     }
 
     // Update is called once per frame
@@ -33,6 +34,13 @@ public class Task_List : MonoBehaviour
                 foreach (ClusterNavigator change in security)
                 {
                     change.newNPCRole(NPCRole.SweepParkingLot);
+                }
+                break;
+			case 2:
+                mode.text = "ALERT!!! Radiation Detected";
+                foreach (ClusterNavigator change in security)
+                {
+                    change.newNPCRole(NPCRole.Radiactive);
                 }
                 break;
         }

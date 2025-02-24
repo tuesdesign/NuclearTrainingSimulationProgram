@@ -1,6 +1,6 @@
-// Constantine Pallas
-// PersonNavigator.cs
-// Control the movement of a simulated person using a NavMeshAgent component
+// Manvir Punglia 
+// ClusterNavigator.cs
+// This script is a further development of the PersonNavigator.cs script  
 
 // Note: this is for a research project and might need to be changed by someone else later, i'll comment everything to a silly degree. 
 
@@ -14,10 +14,10 @@ using UnityEngine.AI;
 
 public class ClusterNavigator : MonoBehaviour
 {
-    [SerializeField] private int charType = 0;
-    [SerializeField] private NPCRole npcRole;
+    [SerializeField] private NPCRole npcRole; // a changeable enum to be edited in the inspector    
+    [SerializeField] private int subCluster; // a changeable enum to be edited in the inspector    
 
-    [SerializeField] ClusterManager clusterManager;
+    [SerializeField] ClusterManager clusterManager; // required to get POI location 
 
     NavMeshAgent agent; // Required component for pathfinding
     [SerializeField] private bool DEBUG = false; // Determines if debug messages are printed to the console
@@ -45,7 +45,7 @@ public class ClusterNavigator : MonoBehaviour
     {
         clusterManager = FindObjectOfType<ClusterManager>();
         agent = GetComponent<NavMeshAgent>();
-        SetNewTarget();
+        SetNewTarget(); // starts the pathfinding process 
     }
 
 
@@ -60,11 +60,22 @@ public class ClusterNavigator : MonoBehaviour
         else return false;
     }
 
+
+
     void SetNewTarget()
     {
-        target = clusterManager.GetTargetTransform(npcRole); // Get a new target
-        StartCoroutine(WaitAtWaypoint()); // Start the coroutine to wait at the waypoint
+        target = clusterManager?.GetTargetTransform(npcRole, subCluster);
+
+        if (target == null)
+        {
+            if (DEBUG) Debug.LogWarning($"No waypoints found for {npcRole} in sub-cluster {subCluster}");
+            return;
+        }
+
+        if (DEBUG) Debug.Log($"New target set for {npcRole} in sub-cluster {subCluster}: {target.name}");
+        StartCoroutine(WaitAtWaypoint());
     }
+
 
     IEnumerator WaitAtWaypoint()
     {
@@ -91,12 +102,13 @@ public class ClusterNavigator : MonoBehaviour
     }
 }
 
-public enum NPCRole
+public enum NPCRole // this is an enum setup so that developers can change the behaviour of a npc using just the inspector 
 {
     Threat,
     FirstResponder,
     Civilian,
     EventEmployee,
     SweepStadium,
-    SweepParkingLot
+    SweepParkingLot,
+    Radiactive
 }
