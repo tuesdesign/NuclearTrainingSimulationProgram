@@ -7,7 +7,7 @@ TagManager:
   - Person
   - Threat
   - POI
-  - FRPOI
+  - Detector
   layers:
   - Default
   - TransparentFX
@@ -21,7 +21,7 @@ TagManager:
   - Environment
   - Actor
   - 
-  - 
+  - Detector
   - 
   - 
   - 
