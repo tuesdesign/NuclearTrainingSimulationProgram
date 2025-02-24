@@ -12,11 +12,10 @@ GameObject:
   - component: {fileID: 6071733219529531995}
   - component: {fileID: 881844835784455482}
   - component: {fileID: 8824240915485431987}
-  - component: {fileID: -4233800277452027359}
-  - component: {fileID: 5265207034323125312}
+  - component: {fileID: 7863832561280138296}
   m_Layer: 0
-  m_Name: POI
-  m_TagString: POI
+  m_Name: POIImage
+  m_TagString: ItemImage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 89e5ba9c5fe30914a913a6aaf81866f0, type: 2}
+  - {fileID: -876546973899608171, guid: a246829a13aa29242b46ac1da597146b, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -107,7 +106,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-4233800277452027359
+--- !u!114 &7863832561280138296
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,19 +115,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4768191132896637195}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 4fd1bdab10b5b494e9171a5ecac50599, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5265207034323125312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4768191132896637195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3446a0d922328dc439ab00a56565394f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 1
