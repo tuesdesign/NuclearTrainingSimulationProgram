@@ -1,5 +1,5 @@
 // Constantine Pallas
-// PersonNavigator.cs
+// 
 // Control the movement of a simulated person using a NavMeshAgent component
 
 // Note: this is for a research project and might need to be changed by someone else later, i'll comment everything to a silly degree. 
