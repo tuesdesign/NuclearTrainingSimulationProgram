@@ -28,17 +28,17 @@ public class Task_List : MonoBehaviour
         switch (sweepMode)
         {
             case 0 :
-                mode.text = "stadium sweep start";
+                mode.text = "Patrol";
                 foreach (ClusterNavigator change in security)
                 {
-                    if (change.Role() == SecurityRole.Stadium)
+                    if (change.Role() == SecurityRole.Patrol)
                     {
                         change.newSubCluster(0);
                     }
                 }
                 break;
             case 1 :
-                mode.text = "parking lot sweep start";
+                mode.text = "stadium sweep start";
                 foreach (ClusterNavigator change in security)
                 {
                     if (change.Role() == SecurityRole.ParkingLot)
@@ -47,11 +47,21 @@ public class Task_List : MonoBehaviour
                     }
                 }
                 break;
-			case 2:
+            case 2 :
+                mode.text = "parking lot sweep start";
+                foreach (ClusterNavigator change in security)
+                {
+                    if (change.Role() == SecurityRole.ParkingLot)
+                    {
+                        change.newSubCluster(2);
+                    }
+                }
+                break;
+			case 3:
                 mode.text = "ALERT!!! Radiation Detected";
                 foreach (ClusterNavigator change in security)
                 {
-                    change.newSubCluster(2);
+                    change.newSubCluster(3);
                 }
                 break;
         }

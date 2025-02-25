@@ -13,15 +13,15 @@ public class SweepButton : MonoBehaviour
 
     public void StadiumSweepStart()
     {
-        task.changeMode(0);
+        task.changeMode(1);
     }
 
     public void ParkingLotSweepStart()
     {
-        task.changeMode(1);
+        task.changeMode(2);
     }
     public void Detected()
     {
-        task.changeMode(2);
+        task.changeMode(3);
     }
 }
