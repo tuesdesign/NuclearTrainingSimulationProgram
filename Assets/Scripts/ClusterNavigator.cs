@@ -16,6 +16,7 @@ public class ClusterNavigator : MonoBehaviour
 {
     [SerializeField] private NPCRole npcRole;// a changeable enum to be edited in the inspector    
     [SerializeField] private int subCluster;// a changeable enum to be edited in the inspector    
+    [SerializeField] private SecurityRole role;
     
     [SerializeField]
     ClusterManager clusterManager;// required to get POI location 
@@ -91,6 +92,16 @@ public class ClusterNavigator : MonoBehaviour
         agent.SetDestination(target.position); // Then, set the agent's destination to it
     }
 
+    public void newSubCluster(int newsubCluster)
+    {
+        subCluster = newsubCluster;
+    }
+
+    public SecurityRole Role()
+    {
+        return role;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -103,5 +114,14 @@ public enum NPCRole // this is an enum setup so that developers can change the b
     Threat,
     FirstResponder,
     Civilian,
-    EventEmployee
+    EventEmployee,
+    Security
+}
+
+public enum SecurityRole
+{
+    Patrol,
+    Stadium,
+    ParkingLot,
+    Radioactive
 }

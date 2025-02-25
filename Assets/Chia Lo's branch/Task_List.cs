@@ -14,7 +14,12 @@ public class Task_List : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        ClusterNavigator[] clusterNavigators = FindObjectsOfType<ClusterNavigator>();
+
+        foreach (var navigator in clusterNavigators)
+        {
+            security.Add(navigator); // Add each found ClusterNavigator to the list
+        }
     }
 
     // Update is called once per frame
@@ -26,21 +31,27 @@ public class Task_List : MonoBehaviour
                 mode.text = "stadium sweep start";
                 foreach (ClusterNavigator change in security)
                 {
-                    change.newNPCRole(NPCRole.SweepStadium);
+                    if (change.Role() == SecurityRole.Stadium)
+                    {
+                        change.newSubCluster(0);
+                    }
                 }
                 break;
             case 1 :
                 mode.text = "parking lot sweep start";
                 foreach (ClusterNavigator change in security)
                 {
-                    change.newNPCRole(NPCRole.SweepParkingLot);
+                    if (change.Role() == SecurityRole.ParkingLot)
+                    {
+                        change.newSubCluster(1);
+                    }
                 }
                 break;
 			case 2:
                 mode.text = "ALERT!!! Radiation Detected";
                 foreach (ClusterNavigator change in security)
                 {
-                    change.newNPCRole(NPCRole.Radiactive);
+                    change.newSubCluster(2);
                 }
                 break;
         }
