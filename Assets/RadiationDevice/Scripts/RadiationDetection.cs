@@ -27,6 +27,14 @@ public class RadiationDetection : MonoBehaviour
 
     public bool Interference { get { return _interference; } set { _interference = value; } }
 
+    private bool _malfunction = false;
+
+    public bool Malfunction { get { return _malfunction; } set { _malfunction = value; } }
+
+
+
+    private InterfernceObj _interferenceObj;
+    public InterfernceObj InterferenceObj { private get { return _interferenceObj; } set { _interferenceObj = value; } }
     
 
     // Start is called before the first frame update
@@ -41,8 +49,9 @@ public class RadiationDetection : MonoBehaviour
         //Resets detected radiation amount at start of every frame so it doesn't scale improperly
         _detectedRadAmt = 0;
 
-        if (!_interference)
+        if (!_malfunction)
         {
+            
             //checks if there are any radiation sources that the detector is inside of
             if (currentRadiationSources.Count > 0)
             {
@@ -61,11 +70,28 @@ public class RadiationDetection : MonoBehaviour
             //checks if the detected radiation amount has surpassed the set threshold amount and sets the bool to true or false respectively
             if (_detectedRadAmt > _threshold) _thresholdReached = true;
             else _thresholdReached = false;
+
+            if (!_interference)
+            {
+                //if there's no interference, set the interference reference to null
+                if (_interferenceObj != null)
+                {
+                    _interferenceObj = null;
+                }
+
+            }
+            else
+            {
+                //if there is interference, modify the detected radiation amount to subtract a random amount depending on how far in the interference range it is
+                _detectedRadAmt = _detectedRadAmt - Random.Range(0, _detectedRadAmt * _interferenceObj.GetDistance(transform.position));
+            }
         }
         else
         {
-            _detectedRadAmt = 0.0f;
+            _detectedRadAmt = Random.Range(0, 200);
         }
+
+
         
 
         //prints out debug values
