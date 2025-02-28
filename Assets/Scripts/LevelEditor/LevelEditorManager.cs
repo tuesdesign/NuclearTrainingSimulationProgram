@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.AI.Navigation;
 
 public class LevelEditorManager : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class LevelEditorManager : MonoBehaviour
     public GameObject[] ItemPrefabs;
     public GameObject[] ItemImage;
     public int CurrentButtonPressed;
+    [SerializeField]
+    NavMeshSurface surface;
 
     private void Update()
     {
@@ -29,5 +32,10 @@ public class LevelEditorManager : MonoBehaviour
             }
             Destroy(GameObject.FindGameObjectWithTag("ItemImage"));
         }
+    }
+
+    public void bakeNavMesh()
+    {
+        surface.BuildNavMesh();
     }
 }
