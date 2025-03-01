@@ -113,4 +113,9 @@ public class RadiationDetection : MonoBehaviour
             currentRadiationSources.Remove(source);
         }
     }
+
+    public bool getThreSholdReached()
+    {
+        return _thresholdReached;
+    }
 }

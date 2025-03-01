@@ -8,7 +8,7 @@ public class Task_List : MonoBehaviour
     private int sweepMode = 0;
 
     public TextMeshProUGUI mode;
-	private bool arrest;
+    private int index = 0;
 
     [SerializeField] private List<ClusterNavigator> security;
     // Start is called before the first frame update
@@ -25,6 +25,17 @@ public class Task_List : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        index = 0;
+        foreach (ClusterNavigator detect in security)
+        {
+            if (detect.GetComponent<RadiationDetection>().getThreSholdReached())
+            {
+                sweepMode = 3;
+                detect.isDetected(true);
+                Debug.Log(sweepMode);
+            }
+            index++;
+        }
         switch (sweepMode)
         {
             case 0 :
@@ -61,6 +72,10 @@ public class Task_List : MonoBehaviour
                 mode.text = "ALERT!!! Radiation Detected";
                 foreach (ClusterNavigator change in security)
                 {
+                    if (change.getDetected())
+                    {
+                        
+                    }
                     change.newSubCluster(3);
                 }
                 break;

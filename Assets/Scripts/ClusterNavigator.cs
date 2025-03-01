@@ -44,7 +44,7 @@ public class ClusterNavigator : MonoBehaviour
     //private AnimationClip WalkAnimation; // The animator component for the agent
 
     private Transform target; // The current target waypoint
-
+    private bool detected = false;
 
     void Start()
     {
@@ -79,6 +79,15 @@ public class ClusterNavigator : MonoBehaviour
         StartCoroutine(WaitAtWaypoint());
     }
 
+    public void isDetected(bool newDetected)
+    {
+        detected = newDetected;
+    }
+
+    public bool getDetected()
+    {
+        return detected;
+    }
 
     IEnumerator WaitAtWaypoint()
     {
