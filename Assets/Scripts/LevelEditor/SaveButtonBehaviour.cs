@@ -6,7 +6,10 @@ public class SaveButtonBehaviour : MonoBehaviour
 {
     [SerializeField]
     private LevelEditorManager reference;
-
+    private void Awake()
+    {
+        //Save();
+    }
     public void Save()
     {
 

@@ -9,6 +9,7 @@ TagManager:
   - POI
   - LevelEditorManager
   - ItemImage
+  - ParkingPoint
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - 
   - Environment
   - Actor
-  - 
+  - Car
   - 
   - 
   - 

@@ -13,23 +13,23 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))] // Require a NavMeshAgent component to be attached to the GameObject
 public class PersonNavigator : MonoBehaviour
 {
-    NavMeshAgent agent; // Required component for pathfinding
+    protected NavMeshAgent agent; // Required component for pathfinding
     [SerializeField]
-    private bool DEBUG = false; // Determines if debug messages are printed to the console
+    protected bool DEBUG = false; // Determines if debug messages are printed to the console
 
     [SerializeField]
-    private List<PointOfInterestBehaviour> waypoints; // A list of all possible waypoints to target
+    protected List<PointOfInterestBehaviour> waypoints; // A list of all possible waypoints to target
 
     [SerializeField, Range(0.5f, 5f)]
-    private float acceptableDistance = 0.5f; // The distance at which the agent is considered to have reached the target
+    protected float acceptableDistance = 0.5f; // The distance at which the agent is considered to have reached the target
 
     [SerializeField, Range(0.1f, 3f)]
-    private float WaitTime = 1f; // The time the agent waits at a waypoint before moving to the next one
+    protected float WaitTime = 1f; // The time the agent waits at a waypoint before moving to the next one
 
     public bool waiting;
 
     [SerializeField]
-    private Animator animator; // The animator component for the agent
+    protected Animator animator; // The animator component for the agent
 
     //[SerializeField]
     //private AnimationClip IdleAnimation; // The animator component for the agent
@@ -37,8 +37,9 @@ public class PersonNavigator : MonoBehaviour
     //[SerializeField]
     //private AnimationClip WalkAnimation; // The animator component for the agent
 
-    [SerializeField] Transform target; // The current target waypoint
+    [SerializeField] protected Transform target; // The current target waypoint
 
+    [SerializeField] string waypointTag = "POI";
 
     void Awake()
     {
@@ -58,13 +59,13 @@ public class PersonNavigator : MonoBehaviour
         // reset waypoints
         waypoints.Clear();
         // find all objects with POI tag and add them to waypoints
-        foreach(GameObject poi in GameObject.FindGameObjectsWithTag("POI"))
+        foreach(GameObject poi in GameObject.FindGameObjectsWithTag(waypointTag))
         {
             waypoints.Add(poi.GetComponent<PointOfInterestBehaviour>());
         }
     }
 
-    bool IsAtTarget()
+    protected bool IsAtTarget()
     {
         if (Vector3.Distance(transform.position, target.position) < acceptableDistance) // Return true if the agent is within an acceptable distance of the target
         {
@@ -94,7 +95,7 @@ public class PersonNavigator : MonoBehaviour
         StartCoroutine("WaitAtWaypoint");
     }
 
-    IEnumerator WaitAtWaypoint()
+    protected virtual IEnumerator WaitAtWaypoint()
     {
         
         yield return new WaitForSeconds(WaitTime); // Wait
@@ -111,7 +112,7 @@ public class PersonNavigator : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         //If the person is at their desired destination
         if (IsAtTarget())
