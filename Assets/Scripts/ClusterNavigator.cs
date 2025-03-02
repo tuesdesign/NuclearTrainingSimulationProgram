@@ -48,7 +48,7 @@ public class ClusterNavigator : MonoBehaviour
 
     void Start()
     {
-        clusterManager = FindObjectOfType<ClusterManager>(); 
+        if(clusterManager == null) clusterManager = FindObjectOfType<ClusterManager>(); 
         agent = GetComponent<NavMeshAgent>();
         SetNewTarget();// starts the pathfinding process 
     }

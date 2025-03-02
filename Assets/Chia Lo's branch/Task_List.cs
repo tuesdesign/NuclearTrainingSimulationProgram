@@ -61,7 +61,7 @@ public class Task_List : MonoBehaviour
             case 2 :
                 mode.text = "parking lot sweep start";
                 foreach (ClusterNavigator change in security)
-                {
+                {    
                     if (change.Role() == SecurityRole.ParkingLot)
                     {
                         change.newSubCluster(2);
