@@ -8,17 +8,20 @@ public class Task_List : MonoBehaviour
     private int sweepMode = 0;
 
     public TextMeshProUGUI mode;
-    private int index = 0;
 
     [SerializeField] private List<ClusterNavigator> security;
     // Start is called before the first frame update
     void Start()
     {
-        ClusterNavigator[] clusterNavigators = FindObjectsOfType<ClusterNavigator>();
+        GameObject[] clusterNavigators = GameObject.FindGameObjectsWithTag("Security");
 
-        foreach (var navigator in clusterNavigators)
+        foreach (var gameObject in clusterNavigators)
         {
-            security.Add(navigator); // Add each found ClusterNavigator to the list
+            ClusterNavigator navigator = gameObject.GetComponent<ClusterNavigator>();
+            if (navigator != null)
+            {
+                security.Add(navigator);
+            }
         }
     }
 
