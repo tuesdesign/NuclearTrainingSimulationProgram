@@ -6,9 +6,9 @@ TagManager:
   tags:
   - Person
   - Threat
-  - POI
   - Detector
   - Interactive
+  - Security
   layers:
   - Default
   - TransparentFX
