@@ -101,9 +101,9 @@ public class ClusterNavigator : MonoBehaviour
         agent.SetDestination(target.position); // Then, set the agent's destination to it
     }
 
-    public void newSubCluster(int newsubCluster)
+    public void newNPCRole(NPCRole newNPCRole)
     {
-        subCluster = newsubCluster;
+        npcRole = newNPCRole;
     }
 
     public SecurityRole Role()
@@ -124,7 +124,10 @@ public enum NPCRole // this is an enum setup so that developers can change the b
     FirstResponder,
     Civilian,
     EventEmployee,
-    Security
+    Patrol,
+    Stadium,
+    ParkingLot,
+    Radiation
 }
 
 public enum SecurityRole
@@ -132,5 +135,5 @@ public enum SecurityRole
     Patrol,
     Stadium,
     ParkingLot,
-    Radioactive
+    Radiation
 }

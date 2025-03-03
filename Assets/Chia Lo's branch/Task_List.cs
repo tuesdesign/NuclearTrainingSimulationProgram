@@ -25,17 +25,6 @@ public class Task_List : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        index = 0;
-        foreach (ClusterNavigator detect in security)
-        {
-            if (detect.GetComponent<RadiationDetection>().getThreSholdReached())
-            {
-                sweepMode = 3;
-                detect.isDetected(true);
-                Debug.Log(sweepMode);
-            }
-            index++;
-        }
         switch (sweepMode)
         {
             case 0 :
@@ -44,7 +33,7 @@ public class Task_List : MonoBehaviour
                 {
                     if (change.Role() == SecurityRole.Patrol)
                     {
-                        change.newSubCluster(0);
+                        change.newNPCRole(NPCRole.Patrol);
                     }
                 }
                 break;
@@ -54,7 +43,7 @@ public class Task_List : MonoBehaviour
                 {
                     if (change.Role() == SecurityRole.ParkingLot)
                     {
-                        change.newSubCluster(1);
+                        change.newNPCRole(NPCRole.Stadium);
                     }
                 }
                 break;
@@ -64,7 +53,7 @@ public class Task_List : MonoBehaviour
                 {    
                     if (change.Role() == SecurityRole.ParkingLot)
                     {
-                        change.newSubCluster(2);
+                        change.newNPCRole(NPCRole.ParkingLot);
                     }
                 }
                 break;
@@ -76,7 +65,7 @@ public class Task_List : MonoBehaviour
                     {
                         
                     }
-                    change.newSubCluster(3);
+                    change.newNPCRole(NPCRole.Radiation);
                 }
                 break;
         }
