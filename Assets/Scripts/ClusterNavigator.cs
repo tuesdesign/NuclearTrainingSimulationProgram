@@ -93,10 +93,10 @@ public class ClusterNavigator : MonoBehaviour
     {
         agent.isStopped = true; // Stop
         animator.SetBool("Walking", false); // Set the animator to not walking
-        //animator.Play("Idle"); // Play the idle animation
+        animator.Play("Idle"); // Play the idle animation
         yield return new WaitForSeconds(WaitTime); // Wait
         agent.isStopped = false; // Start
-        //animator.Play("Walking"); // Play the walk animation
+        animator.Play("Walking"); // Play the walk animation
         animator.SetBool("Walking", true); // Set the animator to walking
         agent.SetDestination(target.position); // Then, set the agent's destination to it
     }
