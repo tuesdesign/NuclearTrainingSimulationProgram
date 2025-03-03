@@ -20,8 +20,8 @@ public class SweepButton : MonoBehaviour
     {
         task.changeMode(2);
     }
-    public void Detected()
+    public void Patrol()
     {
-        task.changeMode(3);
+        task.changeMode(0);
     }
 }

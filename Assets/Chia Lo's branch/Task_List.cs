@@ -44,7 +44,7 @@ public class Task_List : MonoBehaviour
                 mode.text = "stadium sweep start";
                 foreach (ClusterNavigator change in security)
                 {
-                    if (change.Role() == SecurityRole.ParkingLot)
+                    if (change.Role() == SecurityRole.Stadium)
                     {
                         change.newNPCRole(NPCRole.Stadium);
                     }

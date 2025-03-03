@@ -3904,7 +3904,7 @@ MonoBehaviour:
   _detectedRadAmt: 0
   currentRadiationSources: []
   _threshold: 5
-  _BRValues: {fileID: 0}
+  _BRValues: {fileID: 11400000, guid: e9eba1412992039489dddf4aad844e58, type: 2}
 --- !u!1 &8627384389711057744
 GameObject:
   m_ObjectHideFlags: 0
