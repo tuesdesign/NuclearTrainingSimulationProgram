@@ -3741,6 +3741,7 @@ GameObject:
   - component: {fileID: 8874708103231807872}
   - component: {fileID: 3219281400456850946}
   - component: {fileID: 976183615748432156}
+  - component: {fileID: 5826751332388461444}
   m_Layer: 6
   m_Name: Patrol Security
   m_TagString: Security
@@ -3905,6 +3906,24 @@ MonoBehaviour:
   currentRadiationSources: []
   _threshold: 5
   _BRValues: {fileID: 11400000, guid: e9eba1412992039489dddf4aad844e58, type: 2}
+--- !u!114 &5826751332388461444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8287124460370564049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0.100171804, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &8627384389711057744
 GameObject:
   m_ObjectHideFlags: 0

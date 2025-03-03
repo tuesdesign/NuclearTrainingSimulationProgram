@@ -10,6 +10,8 @@ public class Task_List : MonoBehaviour
     public TextMeshProUGUI mode;
 
     [SerializeField] private List<ClusterNavigator> security;
+
+    [SerializeField] private RadiationDetection radiationDetection;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,13 @@ public class Task_List : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        foreach (ClusterNavigator change in security)
+        {
+            if (change.GetComponent<RadiationDetection>().getThreSholdReached())
+            {
+                mode.text = "ALERT!!! Radiation Detected";
+            }
+        }
         switch (sweepMode)
         {
             case 0 :
@@ -38,12 +47,17 @@ public class Task_List : MonoBehaviour
                     {
                         change.newNPCRole(NPCRole.Patrol);
                     }
+                    else
+                    {
+                        change.GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
+                    }
                 }
                 break;
             case 1 :
                 mode.text = "stadium sweep start";
                 foreach (ClusterNavigator change in security)
                 {
+                    change.GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = false;
                     if (change.Role() == SecurityRole.Stadium)
                     {
                         change.newNPCRole(NPCRole.Stadium);
@@ -53,22 +67,12 @@ public class Task_List : MonoBehaviour
             case 2 :
                 mode.text = "parking lot sweep start";
                 foreach (ClusterNavigator change in security)
-                {    
+                {
+                    change.GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = false;
                     if (change.Role() == SecurityRole.ParkingLot)
                     {
                         change.newNPCRole(NPCRole.ParkingLot);
                     }
-                }
-                break;
-			case 3:
-                mode.text = "ALERT!!! Radiation Detected";
-                foreach (ClusterNavigator change in security)
-                {
-                    if (change.getDetected())
-                    {
-                        
-                    }
-                    change.newNPCRole(NPCRole.Radiation);
                 }
                 break;
         }

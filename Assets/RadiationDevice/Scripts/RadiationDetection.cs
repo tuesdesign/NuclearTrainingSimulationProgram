@@ -19,6 +19,8 @@ public class RadiationDetection : MonoBehaviour
     [SerializeField]
     SO_BackgroundRadiation _BRValues;
 
+    [SerializeField] private ClusterManager manager;
+
     private float _currBGRad;
 
     private bool _thresholdReached = false;
@@ -68,7 +70,7 @@ public class RadiationDetection : MonoBehaviour
             _detectedRadAmt += _currBGRad;
 
             //checks if the detected radiation amount has surpassed the set threshold amount and sets the bool to true or false respectively
-            if (_detectedRadAmt > _threshold) _thresholdReached = true;
+            if (_detectedRadAmt > _threshold)_thresholdReached = true;
             else _thresholdReached = false;
 
             if (!_interference)
@@ -113,9 +115,9 @@ public class RadiationDetection : MonoBehaviour
             currentRadiationSources.Remove(source);
         }
     }
-
     public bool getThreSholdReached()
     {
         return _thresholdReached;
     }
+
 }

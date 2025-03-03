@@ -44,7 +44,6 @@ public class ClusterNavigator : MonoBehaviour
     //private AnimationClip WalkAnimation; // The animator component for the agent
 
     private Transform target; // The current target waypoint
-    private bool detected = false;
 
     void Start()
     {
@@ -77,16 +76,6 @@ public class ClusterNavigator : MonoBehaviour
 
         if (DEBUG) Debug.Log($"New target set for {npcRole} in sub-cluster {subCluster}: {target.name}");
         StartCoroutine(WaitAtWaypoint());
-    }
-
-    public void isDetected(bool newDetected)
-    {
-        detected = newDetected;
-    }
-
-    public bool getDetected()
-    {
-        return detected;
     }
 
     IEnumerator WaitAtWaypoint()
@@ -126,14 +115,12 @@ public enum NPCRole // this is an enum setup so that developers can change the b
     EventEmployee,
     Patrol,
     Stadium,
-    ParkingLot,
-    Radiation
+    ParkingLot
 }
 
 public enum SecurityRole
 {
     Patrol,
     Stadium,
-    ParkingLot,
-    Radiation
+    ParkingLot
 }
