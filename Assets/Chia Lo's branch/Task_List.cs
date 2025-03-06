@@ -30,12 +30,15 @@ public class Task_List : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        int index = 0;
         foreach (ClusterNavigator change in security)
         {
             if (change.GetComponent<RadiationDetection>().getThreSholdReached())
             {
-                mode.text = "ALERT!!! Radiation Detected";
+                Debug.LogWarning("ALERT!!! " + security[index] + " Found Radiation Detected");
             }
+
+            index++;
         }
         switch (sweepMode)
         {

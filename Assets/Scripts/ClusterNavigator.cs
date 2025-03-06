@@ -99,7 +99,6 @@ public class ClusterNavigator : MonoBehaviour
     {
         return role;
     }
-
     // Update is called once per frame
     void Update()
     {
