@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using TMPro;
 
 public class Task_List : MonoBehaviour
@@ -52,7 +53,7 @@ public class Task_List : MonoBehaviour
                     }
                     else
                     {
-                        change.GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
+                        change.GetComponent<NavMeshAgent>().isStopped = true;
                     }
                 }
                 break;
@@ -60,7 +61,7 @@ public class Task_List : MonoBehaviour
                 mode.text = "stadium sweep start";
                 foreach (ClusterNavigator change in security)
                 {
-                    change.GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = false;
+                    change.GetComponent<NavMeshAgent>().isStopped = false;
                     if (change.Role() == SecurityRole.Stadium)
                     {
                         change.newNPCRole(NPCRole.Stadium);
@@ -71,7 +72,7 @@ public class Task_List : MonoBehaviour
                 mode.text = "parking lot sweep start";
                 foreach (ClusterNavigator change in security)
                 {
-                    change.GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = false;
+                    change.GetComponent<NavMeshAgent>().isStopped = false;
                     if (change.Role() == SecurityRole.ParkingLot)
                     {
                         change.newNPCRole(NPCRole.ParkingLot);
