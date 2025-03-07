@@ -256,7 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2346955629250821764}
   - component: {fileID: 8719917414294771720}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Light Probe Group (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -498,7 +498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9146756187877327239}
   - component: {fileID: 3789748407448078764}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Light Probe Group (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,6 +538,111 @@ LightProbeGroup:
   - {x: -1, y: -1, z: 1}
   - {x: -1, y: -1, z: -1}
   m_Dering: 1
+--- !u!1 &2563390160070306453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7674766031605619911}
+  - component: {fileID: 4386221111546889616}
+  - component: {fileID: 7463392015743046447}
+  - component: {fileID: 1633377662956864980}
+  m_Layer: 0
+  m_Name: DoorwayCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7674766031605619911
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2563390160070306453}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.792, y: 5.892, z: -16.298}
+  m_LocalScale: {x: 1.2987, y: 0.1375, z: 1.5374278}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 82724734997323437}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4386221111546889616
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2563390160070306453}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &7463392015743046447
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2563390160070306453}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1633377662956864980
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2563390160070306453}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3401974437174514647
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,7 +653,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8861224479609802908}
   - component: {fileID: 4100098737737168756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Light Probe Group (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1562,7 +1667,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6001082575911170704}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Counters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1640,6 +1745,7 @@ Transform:
   - {fileID: 5231346998158388330}
   - {fileID: 1089800069364835349}
   - {fileID: 3534973564508687197}
+  - {fileID: 7674766031605619911}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9085613922907973381
@@ -2123,6 +2229,18 @@ PrefabInstance:
     - target: {fileID: 1228455167134772, guid: a7720249434f74456b1c8a8941813351, type: 3}
       propertyPath: m_Name
       value: Bathroom Counter (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228455167134772, guid: a7720249434f74456b1c8a8941813351, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461180311991382, guid: a7720249434f74456b1c8a8941813351, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577669224445956, guid: a7720249434f74456b1c8a8941813351, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4095345807195960, guid: a7720249434f74456b1c8a8941813351, type: 3}
       propertyPath: m_RootOrder
@@ -3750,6 +3868,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bathroom Counter (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1228455167134772, guid: a7720249434f74456b1c8a8941813351, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461180311991382, guid: a7720249434f74456b1c8a8941813351, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577669224445956, guid: a7720249434f74456b1c8a8941813351, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4095345807195960, guid: a7720249434f74456b1c8a8941813351, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -3920,6 +4050,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6001082575911170704}
     m_Modifications:
+    - target: {fileID: 1228455167134772, guid: a7720249434f74456b1c8a8941813351, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461180311991382, guid: a7720249434f74456b1c8a8941813351, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577669224445956, guid: a7720249434f74456b1c8a8941813351, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4095345807195960, guid: a7720249434f74456b1c8a8941813351, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4032,13 +4174,69 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6001082575911170704}
     m_Modifications:
+    - target: {fileID: 1062286296681682, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205890374398526, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229749205073992, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253971953538870, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1253971953538870, guid: baebbf22596d34679a74323a8574b40a, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1321687368099888, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1434567286045330, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478709457526284, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1480133758651430, guid: baebbf22596d34679a74323a8574b40a, type: 3}
       propertyPath: m_Name
       value: Bathroom Cabinet (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480133758651430, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514576414971638, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564960277357216, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635486534862840, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1653030059955418, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1862989670307858, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899884976418410, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4207505472493170, guid: baebbf22596d34679a74323a8574b40a, type: 3}
       propertyPath: m_LocalRotation.y
@@ -4502,6 +4700,38 @@ PrefabInstance:
     - target: {fileID: 1082321749148654, guid: f0eaae7704529472a9fb6ce7c48b4aa2, type: 3}
       propertyPath: m_Name
       value: Bathroom Counter Sink (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082321749148654, guid: f0eaae7704529472a9fb6ce7c48b4aa2, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249523367080264, guid: f0eaae7704529472a9fb6ce7c48b4aa2, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414121608244850, guid: f0eaae7704529472a9fb6ce7c48b4aa2, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524008746793700, guid: f0eaae7704529472a9fb6ce7c48b4aa2, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1665333594530316, guid: f0eaae7704529472a9fb6ce7c48b4aa2, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827461510618968, guid: f0eaae7704529472a9fb6ce7c48b4aa2, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873287323164482, guid: f0eaae7704529472a9fb6ce7c48b4aa2, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980142064721546, guid: f0eaae7704529472a9fb6ce7c48b4aa2, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4079567711190996, guid: f0eaae7704529472a9fb6ce7c48b4aa2, type: 3}
       propertyPath: m_RootOrder
@@ -5182,9 +5412,65 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6001082575911170704}
     m_Modifications:
+    - target: {fileID: 1062286296681682, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205890374398526, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229749205073992, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253971953538870, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321687368099888, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1434567286045330, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478709457526284, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1480133758651430, guid: baebbf22596d34679a74323a8574b40a, type: 3}
       propertyPath: m_Name
       value: Bathroom Cabinet (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480133758651430, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514576414971638, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564960277357216, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635486534862840, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1653030059955418, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1862989670307858, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899884976418410, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4771860232100910, guid: baebbf22596d34679a74323a8574b40a, type: 3}
       propertyPath: m_RootOrder
@@ -5571,9 +5857,65 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6001082575911170704}
     m_Modifications:
+    - target: {fileID: 1062286296681682, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205890374398526, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229749205073992, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253971953538870, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1253971953538870, guid: baebbf22596d34679a74323a8574b40a, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321687368099888, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1434567286045330, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478709457526284, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480133758651430, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514576414971638, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564960277357216, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635486534862840, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1653030059955418, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1862989670307858, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899884976418410, guid: baebbf22596d34679a74323a8574b40a, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4207505472493170, guid: baebbf22596d34679a74323a8574b40a, type: 3}
       propertyPath: m_LocalRotation.y
@@ -6209,9 +6551,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6001082575911170704}
     m_Modifications:
+    - target: {fileID: 1082321749148654, guid: f0eaae7704529472a9fb6ce7c48b4aa2, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249523367080264, guid: f0eaae7704529472a9fb6ce7c48b4aa2, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414121608244850, guid: f0eaae7704529472a9fb6ce7c48b4aa2, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524008746793700, guid: f0eaae7704529472a9fb6ce7c48b4aa2, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1524008746793700, guid: f0eaae7704529472a9fb6ce7c48b4aa2, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1665333594530316, guid: f0eaae7704529472a9fb6ce7c48b4aa2, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827461510618968, guid: f0eaae7704529472a9fb6ce7c48b4aa2, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873287323164482, guid: f0eaae7704529472a9fb6ce7c48b4aa2, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980142064721546, guid: f0eaae7704529472a9fb6ce7c48b4aa2, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4079567711190996, guid: f0eaae7704529472a9fb6ce7c48b4aa2, type: 3}
       propertyPath: m_RootOrder
@@ -6819,37 +7193,105 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6001082575911170704}
     m_Modifications:
+    - target: {fileID: 1020176343473940, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073823218230346, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1073823218230346, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1117773488201060, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1130339158797634, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157457627096938, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1157457627096938, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1233084893967712, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1233084893967712, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1272126005634680, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1272126005634680, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1439290074826644, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486064875547466, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1486064875547466, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1595746912593972, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624181447202130, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1627018840871934, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
       propertyPath: m_Name
       value: Bathroom Cabinet Sink (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627018840871934, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1772897358067216, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1772897358067216, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1798677065757502, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798677065757502, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843019997058962, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884342407998808, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983851194190240, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4652680053975596, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
       propertyPath: m_LocalRotation.y
@@ -7397,9 +7839,77 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6001082575911170704}
     m_Modifications:
+    - target: {fileID: 1020176343473940, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073823218230346, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1117773488201060, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1130339158797634, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157457627096938, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1233084893967712, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1272126005634680, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439290074826644, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486064875547466, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595746912593972, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624181447202130, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1627018840871934, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
       propertyPath: m_Name
       value: Bathroom Cabinet Sink (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627018840871934, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1772897358067216, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798677065757502, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843019997058962, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884342407998808, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983851194190240, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4724879024052504, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
       propertyPath: m_RootOrder
@@ -7861,9 +8371,77 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6001082575911170704}
     m_Modifications:
+    - target: {fileID: 1020176343473940, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073823218230346, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1117773488201060, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1130339158797634, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157457627096938, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1233084893967712, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1272126005634680, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439290074826644, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486064875547466, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595746912593972, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624181447202130, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1627018840871934, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
       propertyPath: m_Name
       value: Bathroom Cabinet Sink (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627018840871934, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1772897358067216, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798677065757502, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843019997058962, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884342407998808, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983851194190240, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4724879024052504, guid: bcb40c5b9df714b298ba2d369c01bbe4, type: 3}
       propertyPath: m_RootOrder
@@ -8660,6 +9238,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bathroom Counter (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1228455167134772, guid: a7720249434f74456b1c8a8941813351, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461180311991382, guid: a7720249434f74456b1c8a8941813351, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577669224445956, guid: a7720249434f74456b1c8a8941813351, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4095345807195960, guid: a7720249434f74456b1c8a8941813351, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -9041,6 +9631,18 @@ PrefabInstance:
     - target: {fileID: 1228455167134772, guid: a7720249434f74456b1c8a8941813351, type: 3}
       propertyPath: m_Name
       value: Bathroom Counter (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228455167134772, guid: a7720249434f74456b1c8a8941813351, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461180311991382, guid: a7720249434f74456b1c8a8941813351, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577669224445956, guid: a7720249434f74456b1c8a8941813351, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4095345807195960, guid: a7720249434f74456b1c8a8941813351, type: 3}
       propertyPath: m_RootOrder
