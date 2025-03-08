@@ -47,21 +47,13 @@ public class Task_List : MonoBehaviour
                 mode.text = "Patrol";
                 foreach (ClusterNavigator change in security)
                 {
-                    if (change.Role() == SecurityRole.Patrol)
-                    {
                         change.newNPCRole(NPCRole.Patrol);
-                    }
-                    else
-                    {
-                        change.GetComponent<NavMeshAgent>().isStopped = true;
-                    }
                 }
                 break;
             case 1 :
                 mode.text = "stadium sweep start";
                 foreach (ClusterNavigator change in security)
                 {
-                    change.GetComponent<NavMeshAgent>().isStopped = false;
                     if (change.Role() == SecurityRole.Stadium)
                     {
                         change.newNPCRole(NPCRole.Stadium);
@@ -72,7 +64,6 @@ public class Task_List : MonoBehaviour
                 mode.text = "parking lot sweep start";
                 foreach (ClusterNavigator change in security)
                 {
-                    change.GetComponent<NavMeshAgent>().isStopped = false;
                     if (change.Role() == SecurityRole.ParkingLot)
                     {
                         change.newNPCRole(NPCRole.ParkingLot);
