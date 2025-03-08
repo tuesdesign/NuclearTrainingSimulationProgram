@@ -391,7 +391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: clusterManager
@@ -1338,7 +1338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: standByPos
@@ -1635,7 +1635,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: subCluster
@@ -1723,7 +1723,7 @@ Transform:
   m_GameObject: {fileID: 112104153}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -55.079998, y: -4.5439997, z: 31.189995}
+  m_LocalPosition: {x: -55.079998, y: -3.92, z: 31.189995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1919,7 +1919,7 @@ Transform:
   m_GameObject: {fileID: 126431728}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.75, y: 0, z: 53.23}
+  m_LocalPosition: {x: -13.75, y: -1.12, z: 53.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2127,6 +2127,41 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbc8fcbbbb959f04aaf80f9f474d9d3b, type: 3}
+--- !u!1 &143142722
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 143142723}
+  m_Layer: 0
+  m_Name: Sweep Behavior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &143142723
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143142722}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 949543359}
+  - {fileID: 1055037391}
+  - {fileID: 503603455}
+  - {fileID: 1641568367}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &151111141
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3256,7 +3291,6 @@ GameObject:
   m_Component:
   - component: {fileID: 264351775}
   - component: {fileID: 264351773}
-  - component: {fileID: 264351774}
   m_Layer: 0
   m_Name: Parking Lot Sweep Manager (2)
   m_TagString: Untagged
@@ -3279,12 +3313,12 @@ MonoBehaviour:
   clusters:
   - role: 4
     subClusters:
-    - subClusterID: 0
+    - subClusterID: 2
       waypoints:
       - {fileID: 1014300250}
   - role: 6
     subClusters:
-    - subClusterID: 0
+    - subClusterID: 2
       waypoints:
       - {fileID: 537987297}
       - {fileID: 1433169363}
@@ -3295,21 +3329,6 @@ MonoBehaviour:
       - {fileID: 1772884606}
       - {fileID: 1448018195}
       - {fileID: 1778862110}
---- !u!114 &264351774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 264351772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cc5bc59a3c251c4d9bb92a703b5b90b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mode: {fileID: 835066747}
-  security: []
-  radiationDetection: {fileID: 0}
 --- !u!4 &264351775
 Transform:
   m_ObjectHideFlags: 0
@@ -3319,11 +3338,11 @@ Transform:
   m_GameObject: {fileID: 264351772}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.362288, y: 0, z: -52.311188}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 949543359}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &264678308
 GameObject:
@@ -4630,7 +4649,7 @@ Transform:
   m_GameObject: {fileID: 385385295}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.86, y: 0, z: -50.84}
+  m_LocalPosition: {x: -13.86, y: -1.12, z: -50.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4847,7 +4866,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: clusterManager
@@ -5066,7 +5085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: WaitTime
@@ -5384,7 +5403,6 @@ GameObject:
   m_Component:
   - component: {fileID: 474440253}
   - component: {fileID: 474440251}
-  - component: {fileID: 474440252}
   m_Layer: 0
   m_Name: Stadium Sweep Manager
   m_TagString: Untagged
@@ -5573,21 +5591,6 @@ MonoBehaviour:
       - {fileID: 130581550}
       - {fileID: 985822641}
       - {fileID: 692941204}
---- !u!114 &474440252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474440250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cc5bc59a3c251c4d9bb92a703b5b90b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mode: {fileID: 835066747}
-  security: []
-  radiationDetection: {fileID: 0}
 --- !u!4 &474440253
 Transform:
   m_ObjectHideFlags: 0
@@ -5597,11 +5600,11 @@ Transform:
   m_GameObject: {fileID: 474440250}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.362288, y: 0, z: -52.311188}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 949543359}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &476456832
 GameObject:
@@ -5769,7 +5772,7 @@ Transform:
   - {fileID: 1596617876}
   - {fileID: 537987297}
   - {fileID: 2144719257}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 143142723}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &509265045
 PrefabInstance:
@@ -5785,7 +5788,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: subCluster
@@ -6705,7 +6708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: standByPos
@@ -6817,7 +6820,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: standByPos
@@ -7883,7 +7886,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: standByPos
@@ -8897,7 +8900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: subCluster
@@ -9005,7 +9008,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: standByPos
@@ -9090,7 +9093,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: standByPos
@@ -9211,7 +9214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: subCluster
@@ -9659,7 +9662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: subCluster
@@ -9901,92 +9904,6 @@ MonoBehaviour:
       - {fileID: 128984038}
       - {fileID: 450208010}
       - {fileID: 784775293}
-  - role: 5
-    subClusters:
-    - subClusterID: 0
-      waypoints:
-      - {fileID: 951353644}
-      - {fileID: 48445581}
-      - {fileID: 1964165620}
-      - {fileID: 2122039720}
-      - {fileID: 1535917120}
-      - {fileID: 701221301}
-      - {fileID: 1665992175}
-      - {fileID: 590400590}
-      - {fileID: 31358328}
-      - {fileID: 627962944}
-      - {fileID: 586962998}
-      - {fileID: 1042517485}
-      - {fileID: 117727872}
-      - {fileID: 211908348}
-      - {fileID: 1137434909}
-      - {fileID: 714240403}
-      - {fileID: 271807420}
-      - {fileID: 1332746917}
-      - {fileID: 308248042}
-      - {fileID: 264678309}
-      - {fileID: 993825806}
-      - {fileID: 160079634}
-      - {fileID: 1184588775}
-      - {fileID: 1300182585}
-      - {fileID: 1043437220}
-      - {fileID: 965659167}
-      - {fileID: 40973267}
-      - {fileID: 715862744}
-      - {fileID: 534973312}
-      - {fileID: 1902728624}
-      - {fileID: 843269671}
-      - {fileID: 461758228}
-      - {fileID: 1493630026}
-      - {fileID: 130581550}
-      - {fileID: 985822641}
-      - {fileID: 692941204}
-  - role: 6
-    subClusters:
-    - subClusterID: 0
-      waypoints:
-      - {fileID: 112104154}
-      - {fileID: 1640093831}
-      - {fileID: 268708247}
-      - {fileID: 2128984380}
-      - {fileID: 196970154}
-      - {fileID: 642445256}
-      - {fileID: 717789410}
-      - {fileID: 1613931511}
-      - {fileID: 476456833}
-    - subClusterID: 0
-      waypoints:
-      - {fileID: 1596617876}
-      - {fileID: 797747079}
-      - {fileID: 1754437446}
-      - {fileID: 1970724642}
-      - {fileID: 2043748581}
-      - {fileID: 20503590}
-      - {fileID: 700880886}
-      - {fileID: 527592245}
-      - {fileID: 901362956}
-    - subClusterID: 0
-      waypoints:
-      - {fileID: 537987297}
-      - {fileID: 1433169363}
-      - {fileID: 1332523442}
-      - {fileID: 1188719854}
-      - {fileID: 1748219753}
-      - {fileID: 950290370}
-      - {fileID: 1772884606}
-      - {fileID: 1448018195}
-      - {fileID: 1778862110}
-    - subClusterID: 0
-      waypoints:
-      - {fileID: 2144719257}
-      - {fileID: 95898996}
-      - {fileID: 112679024}
-      - {fileID: 1615769919}
-      - {fileID: 218029258}
-      - {fileID: 674588365}
-      - {fileID: 826993315}
-      - {fileID: 526278729}
-      - {fileID: 1311594564}
 --- !u!4 &949543359
 Transform:
   m_ObjectHideFlags: 0
@@ -9999,8 +9916,13 @@ Transform:
   m_LocalPosition: {x: 11.362288, y: 0, z: -52.311188}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
+  m_Children:
+  - {fileID: 474440253}
+  - {fileID: 1839082546}
+  - {fileID: 1107329416}
+  - {fileID: 264351775}
+  - {fileID: 1630671712}
+  m_Father: {fileID: 143142723}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &949543360
 MonoBehaviour:
@@ -10497,7 +10419,7 @@ Transform:
   m_GameObject: {fileID: 1014300249}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 38.34, y: 0, z: -52.73}
+  m_LocalPosition: {x: 38.34, y: -1.12, z: -52.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10659,7 +10581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: clusterManager
@@ -10912,7 +10834,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055037390}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -42.224945, y: 30.775404, z: -38.810375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10925,7 +10847,7 @@ Transform:
   - {fileID: 309831633}
   - {fileID: 1345591693}
   - {fileID: 38118273}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 143142723}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1066181627 stripped
 Transform:
@@ -11034,7 +10956,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1107329416}
   - component: {fileID: 1107329414}
-  - component: {fileID: 1107329415}
   m_Layer: 0
   m_Name: Parking Lot Sweep Manager (1)
   m_TagString: Untagged
@@ -11057,12 +10978,12 @@ MonoBehaviour:
   clusters:
   - role: 4
     subClusters:
-    - subClusterID: 0
+    - subClusterID: 1
       waypoints:
       - {fileID: 2055910946}
   - role: 6
     subClusters:
-    - subClusterID: 0
+    - subClusterID: 1
       waypoints:
       - {fileID: 1596617876}
       - {fileID: 797747079}
@@ -11073,21 +10994,6 @@ MonoBehaviour:
       - {fileID: 700880886}
       - {fileID: 527592245}
       - {fileID: 901362956}
---- !u!114 &1107329415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1107329413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cc5bc59a3c251c4d9bb92a703b5b90b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mode: {fileID: 835066747}
-  security: []
-  radiationDetection: {fileID: 0}
 --- !u!4 &1107329416
 Transform:
   m_ObjectHideFlags: 0
@@ -11097,11 +11003,11 @@ Transform:
   m_GameObject: {fileID: 1107329413}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.362288, y: 0, z: -52.311188}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 949543359}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1121016208 stripped
 GameObject:
@@ -12685,7 +12591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: standByPos
@@ -12700,6 +12606,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1839082544}
     - target: {fileID: 976183615748432156, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 1839082544}
+    - target: {fileID: 976183615748432156, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -12709,7 +12619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5838631046002193715, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -32.225403
+      value: -32.19
       objectReference: {fileID: 0}
     - target: {fileID: 5838631046002193715, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13549,7 +13459,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: standByPos
@@ -13564,6 +13474,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1839082544}
     - target: {fileID: 976183615748432156, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 1839082544}
+    - target: {fileID: 976183615748432156, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -13573,7 +13487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5838631046002193715, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -32.225403
+      value: -32.19
       objectReference: {fileID: 0}
     - target: {fileID: 5838631046002193715, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14048,7 +13962,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: standByPos
@@ -14063,6 +13977,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1839082544}
     - target: {fileID: 976183615748432156, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 1839082544}
+    - target: {fileID: 976183615748432156, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -14072,7 +13990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5838631046002193715, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -32.225403
+      value: -32.19
       objectReference: {fileID: 0}
     - target: {fileID: 5838631046002193715, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14230,7 +14148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: subCluster
@@ -14307,7 +14225,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: standByPos
@@ -14584,7 +14502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: subCluster
@@ -14666,7 +14584,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: standByPos
@@ -15336,7 +15254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: subCluster
@@ -15650,7 +15568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: standByPos
@@ -16021,7 +15939,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1630671712}
   - component: {fileID: 1630671710}
-  - component: {fileID: 1630671711}
   m_Layer: 0
   m_Name: Parking Lot Sweep Manager (3)
   m_TagString: Untagged
@@ -16044,12 +15961,12 @@ MonoBehaviour:
   clusters:
   - role: 4
     subClusters:
-    - subClusterID: 0
+    - subClusterID: 3
       waypoints:
       - {fileID: 385385296}
   - role: 6
     subClusters:
-    - subClusterID: 0
+    - subClusterID: 3
       waypoints:
       - {fileID: 2144719257}
       - {fileID: 95898996}
@@ -16060,21 +15977,6 @@ MonoBehaviour:
       - {fileID: 826993315}
       - {fileID: 526278729}
       - {fileID: 1311594564}
---- !u!114 &1630671711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630671709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cc5bc59a3c251c4d9bb92a703b5b90b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mode: {fileID: 835066747}
-  security: []
-  radiationDetection: {fileID: 0}
 --- !u!4 &1630671712
 Transform:
   m_ObjectHideFlags: 0
@@ -16084,11 +15986,11 @@ Transform:
   m_GameObject: {fileID: 1630671709}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.362288, y: 0, z: -52.311188}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 949543359}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1631482144
 GameObject:
@@ -16300,7 +16202,7 @@ Transform:
   - {fileID: 522867934}
   - {fileID: 843811526}
   - {fileID: 2056580397}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 143142723}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1653739776
 PrefabInstance:
@@ -16398,7 +16300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: standByPos
@@ -16590,7 +16492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: standByPos
@@ -16605,6 +16507,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1839082544}
     - target: {fileID: 976183615748432156, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 1839082544}
+    - target: {fileID: 976183615748432156, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -16614,7 +16520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5838631046002193715, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -32.2254
+      value: -32.189995
       objectReference: {fileID: 0}
     - target: {fileID: 5838631046002193715, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17414,7 +17320,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1839082546}
   - component: {fileID: 1839082544}
-  - component: {fileID: 1839082545}
   m_Layer: 0
   m_Name: Parking Lot Sweep Manager
   m_TagString: Untagged
@@ -17453,21 +17358,6 @@ MonoBehaviour:
       - {fileID: 717789410}
       - {fileID: 1613931511}
       - {fileID: 476456833}
---- !u!114 &1839082545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1839082543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cc5bc59a3c251c4d9bb92a703b5b90b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mode: {fileID: 835066747}
-  security: []
-  radiationDetection: {fileID: 0}
 --- !u!4 &1839082546
 Transform:
   m_ObjectHideFlags: 0
@@ -17477,11 +17367,11 @@ Transform:
   m_GameObject: {fileID: 1839082543}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.362288, y: 0, z: -52.311188}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 949543359}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1842094978
 Mesh:
@@ -18103,7 +17993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: standByPos
@@ -18819,7 +18709,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: npcRole
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 199726968258478348, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: subCluster
@@ -19348,7 +19238,7 @@ Transform:
   m_GameObject: {fileID: 2055910945}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 37.9, y: 0, z: 53.47}
+  m_LocalPosition: {x: 37.9, y: -1.16, z: 53.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26054,14 +25944,6 @@ SceneRoots:
   - {fileID: 992743979836384398}
   - {fileID: 5792526608647071060}
   - {fileID: 7977512990660770786}
-  - {fileID: 503603455}
-  - {fileID: 949543359}
-  - {fileID: 474440253}
-  - {fileID: 1839082546}
-  - {fileID: 1107329416}
-  - {fileID: 264351775}
-  - {fileID: 1630671712}
   - {fileID: 1241747150}
   - {fileID: 6196676}
-  - {fileID: 1055037391}
-  - {fileID: 1641568367}
+  - {fileID: 143142723}
