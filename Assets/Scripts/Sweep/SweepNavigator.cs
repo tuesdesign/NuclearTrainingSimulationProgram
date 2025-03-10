@@ -12,13 +12,14 @@ using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))] // Require a NavMeshAgent component to be attached to the GameObject
 
-public class ClusterNavigator : MonoBehaviour
+public class SweepNavigator : MonoBehaviour
 {
-    [SerializeField] private NPCRole npcRole;// a changeable enum to be edited in the inspector    
-    [SerializeField] private int subCluster;// a changeable enum to be edited in the inspector
+    [SerializeField] private Role npcRole;// a changeable enum to be edited in the inspector    
+    [SerializeField] private int subCluster;// a changeable enum to be edited in the inspector    
+    [SerializeField] private SecurityRole role;
     
     [SerializeField]
-    ClusterManager clusterManager;// required to get POI location 
+    SweepManager manager;// required to get POI location 
     
     NavMeshAgent agent; // Required component for pathfinding
     [SerializeField]
@@ -46,7 +47,7 @@ public class ClusterNavigator : MonoBehaviour
 
     void Start()
     {
-        if(clusterManager == null) clusterManager = FindObjectOfType<ClusterManager>(); 
+        if(manager == null) manager = FindObjectOfType<SweepManager>(); 
         agent = GetComponent<NavMeshAgent>();
         SetNewTarget();// starts the pathfinding process 
     }
@@ -65,7 +66,7 @@ public class ClusterNavigator : MonoBehaviour
 
     void SetNewTarget()
     {
-        target = clusterManager?.GetTargetTransform(npcRole, subCluster);
+        target = manager?.GetTargetTransform(npcRole, subCluster);
         
         if (target == null)
         {
@@ -88,6 +89,16 @@ public class ClusterNavigator : MonoBehaviour
         animator.SetBool("Walking", true); // Set the animator to walking
         agent.SetDestination(target.position); // Then, set the agent's destination to it
     }
+
+    public void newNPCRole(Role newNPCRole)
+    {
+        npcRole = newNPCRole;
+    }
+
+    public SecurityRole Role()
+    {
+        return role;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -95,10 +106,16 @@ public class ClusterNavigator : MonoBehaviour
     }
 }
 
-public enum NPCRole // this is an enum setup so that developers can change the behaviour of a npc using just the inspector 
+public enum Role // this is an enum setup so that developers can change the behaviour of a npc using just the inspector 
 {
-    Threat,
-    FirstResponder,
-    Civilian,
-    EventEmployee,
+    Patrol,
+    Stadium,
+    ParkingLot
+}
+
+public enum SecurityRole
+{
+    Patrol,
+    Stadium,
+    ParkingLot
 }
