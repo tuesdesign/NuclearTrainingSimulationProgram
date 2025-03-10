@@ -5,8 +5,19 @@ using UnityEngine;
 public class RadiationDetection : MonoBehaviour
 {
 
+    [Header("Type of Detector:")]
+
+    [SerializeField]
+    DetectorType _dtype;
+
+    public DetectorType detectorType { get { return _dtype; } }
+
+
+    [Header("Detected Amount:")]
     [SerializeField]
     float _detectedRadAmt = 0f;
+
+    
 
     public float DetectedRadAmt { get { return _detectedRadAmt; } set {  _detectedRadAmt = value; } }
 
@@ -120,4 +131,11 @@ public class RadiationDetection : MonoBehaviour
         return _thresholdReached;
     }
 
+}
+
+
+public enum DetectorType
+{
+    Moving,
+    Stationary,
 }

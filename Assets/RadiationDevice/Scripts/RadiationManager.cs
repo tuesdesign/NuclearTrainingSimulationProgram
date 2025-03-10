@@ -6,9 +6,9 @@ public class RadiationManager : MonoBehaviour
 {
     //lists fill on awake
 
-    [SerializeField] List<RadiationDetection> detectors = new List<RadiationDetection>();
-    [SerializeField] List<RadiationEmission> emitters = new List<RadiationEmission>();
-    [SerializeField] List<GateDetector> walkthroughDetectors = new List<GateDetector>();
+    [SerializeField] public List<RadiationDetection> stationaryDetectors = new List<RadiationDetection>();
+    [SerializeField] public List<RadiationDetection> movingDetectors = new List<RadiationDetection>();
+    [SerializeField] public List<RadiationEmission> emitters = new List<RadiationEmission>();
 
     // Start is called before the first frame update
     void Start()
@@ -26,13 +26,16 @@ public class RadiationManager : MonoBehaviour
 
         foreach(RadiationDetection detector in GameObject.FindObjectsOfType<RadiationDetection>())
         {
-            detectors.Add(detector);
+            if(detector.detectorType == DetectorType.Stationary)
+            {
+                stationaryDetectors.Add(detector);
+            }
+            else if(detector.detectorType == DetectorType.Moving)
+            {
+                movingDetectors.Add(detector);
+            }
         }
 
-        foreach(GateDetector gateDetector in GameObject.FindObjectsOfType<GateDetector>())
-        {
-            walkthroughDetectors.Add(gateDetector);
-        }
         
     }
 
