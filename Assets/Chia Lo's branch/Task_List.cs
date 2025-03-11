@@ -51,7 +51,7 @@ public class Task_List : MonoBehaviour
                 }
                 break;
             case 1 :
-                mode.text = "stadium sweep start";
+                mode.text = "Stadium Sweep";
                 foreach (ClusterNavigator change in security)
                 {
                     if (change.Role() == SecurityRole.Stadium)
@@ -61,7 +61,7 @@ public class Task_List : MonoBehaviour
                 }
                 break;
             case 2 :
-                mode.text = "parking lot sweep start";
+                mode.text = "Parking Lot Sweep";
                 foreach (ClusterNavigator change in security)
                 {
                     if (change.Role() == SecurityRole.ParkingLot)

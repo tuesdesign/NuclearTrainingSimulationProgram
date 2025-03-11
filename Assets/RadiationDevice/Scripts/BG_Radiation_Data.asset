@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 460f2dc20193c2b418c96808eb97b0ee, type: 3}
   m_Name: BG_Radiation_Data
   m_EditorClassIdentifier: 
-  min_BG_Radiation: 0
-  max_BG_Radiation: 5
+  min_BG_Radiation: 1
+  max_BG_Radiation: 3
