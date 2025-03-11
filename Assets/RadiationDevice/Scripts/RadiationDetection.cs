@@ -20,6 +20,7 @@ public class RadiationDetection : MonoBehaviour
     
 
     public float DetectedRadAmt { get { return _detectedRadAmt; } set {  _detectedRadAmt = value; } }
+    public float Threshold { get { return _threshold; } set {  _threshold = value; } }
 
     [SerializeField]
     List<RadiationEmission> currentRadiationSources = new List<RadiationEmission>();

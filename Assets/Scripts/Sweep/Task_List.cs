@@ -10,7 +10,7 @@ public class Task_List : MonoBehaviour
 
     public TextMeshProUGUI mode;
 
-    [SerializeField] private List<SweepNavigator> security;
+    [SerializeField] private List<ClusterNavigator> security;
 
     [SerializeField] private RadiationDetection radiationDetection;
     // Start is called before the first frame update
@@ -20,7 +20,7 @@ public class Task_List : MonoBehaviour
 
         foreach (var gameObject in clusterNavigators)
         {
-            SweepNavigator navigator = gameObject.GetComponent<SweepNavigator>();
+            ClusterNavigator navigator = gameObject.GetComponent<ClusterNavigator>();
             if (navigator != null)
             {
                 security.Add(navigator);
@@ -32,7 +32,7 @@ public class Task_List : MonoBehaviour
     void Update()
     {
         int index = 0;
-        foreach (SweepNavigator change in security)
+        foreach (ClusterNavigator change in security)
         {
             if (change.GetComponent<RadiationDetection>().getThreSholdReached())
             {
@@ -45,28 +45,28 @@ public class Task_List : MonoBehaviour
         {
             case 0 :
                 mode.text = "Patrol";
-                foreach (SweepNavigator change in security)
+                foreach (ClusterNavigator change in security)
                 {
-                        change.newNPCRole(Role.Patrol);
+                        change.newNPCRole(NPCRole.Patrol);
                 }
                 break;
             case 1 :
-                mode.text = "stadium sweep start";
-                foreach (SweepNavigator change in security)
+                mode.text = "Stadium Sweep";
+                foreach (ClusterNavigator change in security)
                 {
                     if (change.Role() == SecurityRole.Stadium)
                     {
-                        change.newNPCRole(Role.Stadium);
+                        change.newNPCRole(NPCRole.Stadium);
                     }
                 }
                 break;
             case 2 :
-                mode.text = "parking lot sweep start";
-                foreach (SweepNavigator change in security)
+                mode.text = "Parking Lot Sweep";
+                foreach (ClusterNavigator change in security)
                 {
                     if (change.Role() == SecurityRole.ParkingLot)
                     {
-                        change.newNPCRole(Role.ParkingLot);
+                        change.newNPCRole(NPCRole.ParkingLot);
                     }
                 }
                 break;
