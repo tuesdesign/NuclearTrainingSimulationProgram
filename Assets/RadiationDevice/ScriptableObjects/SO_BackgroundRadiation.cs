@@ -7,5 +7,5 @@ public class SO_BackgroundRadiation : ScriptableObject
 {
     public float min_BG_Radiation = 0;
 
-    public float max_BG_Radiation = 5;
+    public float max_BG_Radiation = 10;
 }

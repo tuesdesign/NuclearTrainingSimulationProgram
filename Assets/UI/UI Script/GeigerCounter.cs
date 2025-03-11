@@ -2,34 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class GeigerCounter : MonoBehaviour
 {
     public Slider slider;
-    public Gradient gradient;
-    public Image fill;
     public RadiationDetection radiationDetection;
 
-    void Start()
-    {
-        GradientStuff();
-    }
-
-    public void GradientStuff()
-    {
-        slider.maxValue = 10f;
-        slider.value = 0f;
-        fill.color = gradient.Evaluate(0f);
-    }
+    public RectTransform arrow; // Reference to the arrow's RectTransform
+    public float arrowOffset = 10f; // Offset to adjust arrow position
 
     void Update()
     {
         float detectedRadAmt = radiationDetection.DetectedRadAmt;
         slider.value = detectedRadAmt;
 
-        // Normalize the detected radiation amount to a value between 0 and 1
-        float normalizedValue = Mathf.Clamp01(detectedRadAmt / slider.maxValue);
+        // Update the arrow's position based on the slider value
+        UpdateArrowPosition(detectedRadAmt);
+    }
 
-        // Set the fill color based on the normalized value
-        fill.color = gradient.Evaluate(normalizedValue);
+    void UpdateArrowPosition(float value)
+    {
+        // Calculate the normalized position of the arrow (0 to 1)
+        float normalizedValue = Mathf.Clamp01(value / slider.maxValue);
+
+        // Get the slider's track dimensions
+        RectTransform sliderRect = slider.GetComponent<RectTransform>();
+        float sliderWidth = sliderRect.rect.width;
+
+        // Calculate the arrow's position along the slider's track
+        float arrowX = normalizedValue * sliderWidth - (sliderWidth / 2f) + arrowOffset;
+
+        // Update the arrow's anchored position
+        arrow.anchoredPosition = new Vector2(arrowX, arrow.anchoredPosition.y);
     }
 }
