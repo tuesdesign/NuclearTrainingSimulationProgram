@@ -72,7 +72,7 @@ public class SweepNavigator : MonoBehaviour
         agent.SetDestination(target.position); // Set destination to the target waypoint
     }
 
-    public void newNPCRole(Role newNPCRole)
+    public void newRole(Role newNPCRole)
     {
         npcRole = newNPCRole;
     }
