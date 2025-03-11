@@ -19,9 +19,12 @@ public class SweepManager : MonoBehaviour
         public Role role;
         public List<SubCluster> subClusters;
     }
-    
+
     [SerializeField] private List<Cluster> clusters;
     private Dictionary<Role, Dictionary<int, List<Transform>>> clusterWaypoints = new();
+    
+    // New member to keep track of the current index for each subcluster
+    private Dictionary<Role, Dictionary<int, int>> subClusterWaypointIndices = new();
     
     private void Awake()
     {
@@ -32,7 +35,25 @@ public class SweepManager : MonoBehaviour
     {
         if (clusterWaypoints.TryGetValue(type, out var subClusters) && subClusters.TryGetValue(subCluster, out var waypoints))
         {
-            return waypoints.Count > 0 ? waypoints[Random.Range(0, waypoints.Count)] : null;
+            // Check if there is a way to get the next waypoint in order
+            if (!subClusterWaypointIndices.ContainsKey(type))
+            {
+                subClusterWaypointIndices[type] = new Dictionary<int, int>();
+            }
+            
+            if (!subClusterWaypointIndices[type].ContainsKey(subCluster))
+            {
+                subClusterWaypointIndices[type][subCluster] = 0;  // Start from the first waypoint
+            }
+
+            int currentIndex = subClusterWaypointIndices[type][subCluster];
+            Transform targetWaypoint = waypoints[currentIndex];
+            
+            // Move to the next waypoint in order, looping back to the first one when done
+            currentIndex = (currentIndex + 1) % waypoints.Count;
+            subClusterWaypointIndices[type][subCluster] = currentIndex;
+            
+            return targetWaypoint;
         }
         return null;
     }
@@ -53,4 +74,3 @@ public class SweepManager : MonoBehaviour
         }
     }
 }
-

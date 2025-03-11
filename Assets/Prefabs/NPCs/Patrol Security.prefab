@@ -3735,7 +3735,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5838631046002193715}
-  - component: {fileID: 199726968258478348}
+  - component: {fileID: 5992536504819412791}
   - component: {fileID: 8474870235020940478}
   - component: {fileID: 2128919755282372384}
   - component: {fileID: 8874708103231807872}
@@ -3776,7 +3776,7 @@ Transform:
   - {fileID: 469162309540454945}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &199726968258478348
+--- !u!114 &5992536504819412791
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3785,17 +3785,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 8287124460370564049}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7679072a6d81dd94fa6f6748f972e6d7, type: 3}
+  m_Script: {fileID: 11500000, guid: 343d98693ffa1f148a0faead98d02404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcRole: 1
+  npcRole: 0
   subCluster: 0
   role: 0
-  clusterManager: {fileID: 0}
+  manager: {fileID: 0}
   DEBUG: 0
-  waypoints: []
   acceptableDistance: 1
-  WaitTime: 1
+  WaitTime: 0.1
   animator: {fileID: 8474870235020940478}
 --- !u!95 &8474870235020940478
 Animator:
@@ -3902,10 +3901,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05fac4db2f815f741ab5ff517ff5e2e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dtype: 0
   _detectedRadAmt: 0
   currentRadiationSources: []
   _threshold: 5
   _BRValues: {fileID: 11400000, guid: e9eba1412992039489dddf4aad844e58, type: 2}
+  manager: {fileID: 0}
 --- !u!114 &5826751332388461444
 MonoBehaviour:
   m_ObjectHideFlags: 0

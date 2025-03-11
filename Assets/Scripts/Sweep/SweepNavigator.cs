@@ -1,72 +1,54 @@
-// Manvir Punglia 
-// ClusterNavigator.cs
-// This script is a further development of the PersonNavigator.cs script  
-
-// Note: this is for a research project and might need to be changed by someone else later, i'll comment everything to a silly degree. 
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI; 
 
-
 [RequireComponent(typeof(NavMeshAgent))] // Require a NavMeshAgent component to be attached to the GameObject
-
 public class SweepNavigator : MonoBehaviour
 {
-    [SerializeField] private Role npcRole;// a changeable enum to be edited in the inspector    
-    [SerializeField] private int subCluster;// a changeable enum to be edited in the inspector    
+    [SerializeField] private Role npcRole; // Role to be edited in the inspector    
+    [SerializeField] private int subCluster; // Sub-cluster ID to be edited in the inspector    
     [SerializeField] private SecurityRole role;
     
     [SerializeField]
-    SweepManager manager;// required to get POI location 
+    SweepManager manager; // Reference to the SweepManager script
     
-    NavMeshAgent agent; // Required component for pathfinding
+    private NavMeshAgent agent; // NavMeshAgent for pathfinding
     [SerializeField]
-    private bool DEBUG = false; // Determines if debug messages are printed to the console
+    private bool DEBUG = false; // Debug flag
+    
+    private Transform target; // Current target waypoint
+    private int index = 0; // Index to track current waypoint
 
-    [SerializeField]
-    private List<Transform> waypoints; // A list of all possible waypoints to target
-    
     [SerializeField, Range(1f, 5f)]
-    private float acceptableDistance = 0.1f; // The distance at which the agent is considered to have reached the target
-
+    private float acceptableDistance = 0.1f; // Distance to the target to consider it "reached"
+    
     [SerializeField, Range(0.1f, 3f)]
-    private float WaitTime = 1f; // The time the agent waits at a waypoint before moving to the next one
-
+    private float WaitTime = 1f; // Time to wait at each waypoint
+    
     [SerializeField]
-    private Animator animator; // The animator component for the agent
-
-    //[SerializeField]
-    //private AnimationClip IdleAnimation; // The animator component for the agent
-
-    //[SerializeField]
-    //private AnimationClip WalkAnimation; // The animator component for the agent
-
-    private Transform target; // The current target waypoint
+    private Animator animator; // Animator for NPC animations
 
     void Start()
     {
-        if(manager == null) manager = FindObjectOfType<SweepManager>(); 
+        if (manager == null) manager = FindObjectOfType<SweepManager>(); // Try to find the SweepManager
         agent = GetComponent<NavMeshAgent>();
-        SetNewTarget();// starts the pathfinding process 
+        SetNewTarget(); // Start the pathfinding process
     }
-    
 
     bool IsAtTarget()
     {
-        if (Vector3.Distance(transform.position, target.position) < acceptableDistance) // Return true if the agent is within an acceptable distance of the target
+        if (Vector3.Distance(transform.position, target.position) < acceptableDistance) // If the agent is close enough to the target
         {
             if (DEBUG) print("Arrived at Target");
             return true;
-        } else return false;
+        }
+        return false;
     }
-    
-    
 
     void SetNewTarget()
     {
-        target = manager?.GetTargetTransform(npcRole, subCluster);
+        target = manager?.GetTargetTransform(npcRole, subCluster); // Get next target from SweepManager
         
         if (target == null)
         {
@@ -80,14 +62,14 @@ public class SweepNavigator : MonoBehaviour
 
     IEnumerator WaitAtWaypoint()
     {
-        agent.isStopped = true; // Stop
-        animator.SetBool("Walking", false); // Set the animator to not walking
-        animator.Play("Idle"); // Play the idle animation
-        yield return new WaitForSeconds(WaitTime); // Wait
-        agent.isStopped = false; // Start
-        animator.Play("Walking"); // Play the walk animation
-        animator.SetBool("Walking", true); // Set the animator to walking
-        agent.SetDestination(target.position); // Then, set the agent's destination to it
+        agent.isStopped = true; // Stop movement when waiting
+        animator.SetBool("Walking", false); // Set animator state to idle
+        animator.Play("Idle"); // Play idle animation
+        yield return new WaitForSeconds(WaitTime); // Wait for the specified time
+        agent.isStopped = false; // Resume movement
+        animator.Play("Walking"); // Play walking animation
+        animator.SetBool("Walking", true); // Set animator state to walking
+        agent.SetDestination(target.position); // Set destination to the target waypoint
     }
 
     public void newNPCRole(Role newNPCRole)
@@ -95,18 +77,26 @@ public class SweepNavigator : MonoBehaviour
         npcRole = newNPCRole;
     }
 
+    public void newIndex(int newIndex)
+    {
+        index = newIndex;
+    }
+
     public SecurityRole Role()
     {
         return role;
     }
-    // Update is called once per frame
+
     void Update()
     {
-        if (IsAtTarget()) SetNewTarget(); // This one's just a sentence.
+        if (IsAtTarget()) 
+        {
+            SetNewTarget(); // Get new target when we arrive at the current target
+        }
     }
 }
 
-public enum Role // this is an enum setup so that developers can change the behaviour of a npc using just the inspector 
+public enum Role
 {
     Patrol,
     Stadium,
