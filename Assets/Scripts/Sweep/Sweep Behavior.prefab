@@ -104,69 +104,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2204765920278127111}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &206224858313108957
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2246488096955640647}
-  - component: {fileID: 8419302139850977458}
-  m_Layer: 0
-  m_Name: Parking Lot Sweep Manager (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2246488096955640647
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 206224858313108957}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6319649258256913390}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8419302139850977458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 206224858313108957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db8310dcea928df4d93848ec149a85f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clusters:
-  - role: 0
-    subClusters:
-    - subClusterID: 1
-      waypoints:
-      - {fileID: 8209887465142658966}
-  - role: 2
-    subClusters:
-    - subClusterID: 1
-      waypoints:
-      - {fileID: 2038999388929596411}
-      - {fileID: 8344165019680382113}
-      - {fileID: 7893079300532830153}
-      - {fileID: 2894353344474922227}
-      - {fileID: 8574602709552505395}
-      - {fileID: 2521491919254644444}
-      - {fileID: 2800097843310622246}
-      - {fileID: 8800221669907304287}
-      - {fileID: 6175096708684729251}
 --- !u!1 &557127213416825913
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,7 +322,7 @@ Transform:
   m_GameObject: {fileID: 1162231947677212221}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.7770004, y: -2.238, z: 21.939999}
+  m_LocalPosition: {x: 2.7770004, y: -2.534, z: 23.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -871,69 +808,6 @@ Transform:
   - {fileID: 7837114598589935851}
   m_Father: {fileID: 6889138782462710178}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2329441201470350384
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 333355464374105153}
-  - component: {fileID: 7722116689854774342}
-  m_Layer: 0
-  m_Name: Parking Lot Sweep Manager (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &333355464374105153
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2329441201470350384}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6319649258256913390}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7722116689854774342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2329441201470350384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db8310dcea928df4d93848ec149a85f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clusters:
-  - role: 0
-    subClusters:
-    - subClusterID: 2
-      waypoints:
-      - {fileID: 8182577347427200}
-  - role: 2
-    subClusters:
-    - subClusterID: 2
-      waypoints:
-      - {fileID: 3907115408063785187}
-      - {fileID: 7483221469783854511}
-      - {fileID: 5931285451532153121}
-      - {fileID: 6715287019682906697}
-      - {fileID: 936404379913925262}
-      - {fileID: 4993851964255699970}
-      - {fileID: 1816257374162508357}
-      - {fileID: 7221278594028252590}
-      - {fileID: 680989215961498184}
 --- !u!1 &2544406763314967960
 GameObject:
   m_ObjectHideFlags: 0
@@ -1485,7 +1359,7 @@ Transform:
   m_GameObject: {fileID: 3214428480813476945}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.4300003, y: -2.2599998, z: 12.899998}
+  m_LocalPosition: {x: 2.4300003, y: -2.035, z: 16.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2230,69 +2104,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4692722611995027081}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4811803412689885072
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1060503891096649143}
-  - component: {fileID: 8836654729471249019}
-  m_Layer: 0
-  m_Name: Parking Lot Sweep Manager (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1060503891096649143
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4811803412689885072}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6319649258256913390}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8836654729471249019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4811803412689885072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db8310dcea928df4d93848ec149a85f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clusters:
-  - role: 0
-    subClusters:
-    - subClusterID: 3
-      waypoints:
-      - {fileID: 4179268352014789928}
-  - role: 2
-    subClusters:
-    - subClusterID: 3
-      waypoints:
-      - {fileID: 3907115408063785187}
-      - {fileID: 7483221469783854511}
-      - {fileID: 5931285451532153121}
-      - {fileID: 6715287019682906697}
-      - {fileID: 936404379913925262}
-      - {fileID: 4993851964255699970}
-      - {fileID: 1816257374162508357}
-      - {fileID: 7221278594028252590}
-      - {fileID: 680989215961498184}
 --- !u!1 &4814428165072152789
 GameObject:
   m_ObjectHideFlags: 0
@@ -2864,9 +2675,6 @@ Transform:
   m_Children:
   - {fileID: 203700179093093776}
   - {fileID: 6915752891026290499}
-  - {fileID: 2246488096955640647}
-  - {fileID: 333355464374105153}
-  - {fileID: 1060503891096649143}
   m_Father: {fileID: 3219379862275617751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1433306915959406130
@@ -3978,6 +3786,15 @@ MonoBehaviour:
     - subClusterID: 0
       waypoints:
       - {fileID: 943875053521678684}
+    - subClusterID: 1
+      waypoints:
+      - {fileID: 8209887465142658966}
+    - subClusterID: 2
+      waypoints:
+      - {fileID: 8182577347427200}
+    - subClusterID: 3
+      waypoints:
+      - {fileID: 4179268352014789928}
   - role: 2
     subClusters:
     - subClusterID: 0
@@ -3991,6 +3808,43 @@ MonoBehaviour:
       - {fileID: 3914297576068529947}
       - {fileID: 2059875065874421147}
       - {fileID: 3752306148871014491}
+      - {fileID: 6180785244473995932}
+    - subClusterID: 1
+      waypoints:
+      - {fileID: 2038999388929596411}
+      - {fileID: 8344165019680382113}
+      - {fileID: 7893079300532830153}
+      - {fileID: 2894353344474922227}
+      - {fileID: 8574602709552505395}
+      - {fileID: 2521491919254644444}
+      - {fileID: 2800097843310622246}
+      - {fileID: 8800221669907304287}
+      - {fileID: 6175096708684729251}
+      - {fileID: 7893079300532830153}
+    - subClusterID: 2
+      waypoints:
+      - {fileID: 3907115408063785187}
+      - {fileID: 7483221469783854511}
+      - {fileID: 5931285451532153121}
+      - {fileID: 6715287019682906697}
+      - {fileID: 936404379913925262}
+      - {fileID: 4993851964255699970}
+      - {fileID: 1816257374162508357}
+      - {fileID: 7221278594028252590}
+      - {fileID: 680989215961498184}
+      - {fileID: 5931285451532153121}
+    - subClusterID: 3
+      waypoints:
+      - {fileID: 9035489014853871150}
+      - {fileID: 5043649537488025194}
+      - {fileID: 520795811218654616}
+      - {fileID: 612669134502407688}
+      - {fileID: 1012751510375319301}
+      - {fileID: 8030867494909789674}
+      - {fileID: 5676671692798336852}
+      - {fileID: 1567741973958529160}
+      - {fileID: 3160653358776323690}
+      - {fileID: 520795811218654616}
 --- !u!1 &8620879834347647264
 GameObject:
   m_ObjectHideFlags: 0
@@ -4378,7 +4232,7 @@ PrefabInstance:
     - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: manager
       value: 
-      objectReference: {fileID: 8419302139850977458}
+      objectReference: {fileID: 2988461603016644528}
     - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: subCluster
       value: 1
@@ -4830,7 +4684,7 @@ PrefabInstance:
     - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: manager
       value: 
-      objectReference: {fileID: 8836654729471249019}
+      objectReference: {fileID: 2988461603016644528}
     - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: subCluster
       value: 3
@@ -5040,7 +4894,7 @@ PrefabInstance:
     - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: manager
       value: 
-      objectReference: {fileID: 7722116689854774342}
+      objectReference: {fileID: 2988461603016644528}
     - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: subCluster
       value: 2
@@ -5184,7 +5038,7 @@ PrefabInstance:
     - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: manager
       value: 
-      objectReference: {fileID: 7722116689854774342}
+      objectReference: {fileID: 2988461603016644528}
     - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: subCluster
       value: 2
@@ -5698,7 +5552,7 @@ PrefabInstance:
     - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: manager
       value: 
-      objectReference: {fileID: 8836654729471249019}
+      objectReference: {fileID: 2988461603016644528}
     - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: subCluster
       value: 3
@@ -6130,7 +5984,7 @@ PrefabInstance:
     - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: manager
       value: 
-      objectReference: {fileID: 8419302139850977458}
+      objectReference: {fileID: 2988461603016644528}
     - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: subCluster
       value: 1
