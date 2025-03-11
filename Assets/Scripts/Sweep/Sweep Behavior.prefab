@@ -32,7 +32,10 @@ Transform:
   - {fileID: 2204765920278127111}
   - {fileID: 4638597620290457869}
   - {fileID: 4844877212446023272}
+  - {fileID: 2000625769701636675}
+  - {fileID: 6905309130067877691}
   - {fileID: 6909808661933909712}
+  - {fileID: 2952329509107077621}
   - {fileID: 6736171913200482154}
   - {fileID: 8563059722691538339}
   - {fileID: 4692722611995027081}
@@ -298,7 +301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6909808661933909712}
   m_Layer: 0
-  m_Name: S Sweep points
+  m_Name: S Sweep points (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -313,7 +316,7 @@ Transform:
   m_GameObject: {fileID: 905591896644371427}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.459999, y: 0.816, z: -73.670006}
+  m_LocalPosition: {x: -7.459999, y: 1.2, z: -73.670006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -324,9 +327,6 @@ Transform:
   - {fileID: 8959067836095187436}
   - {fileID: 6829644035291557005}
   - {fileID: 1863291049685050788}
-  - {fileID: 2952329509107077621}
-  - {fileID: 6905309130067877691}
-  - {fileID: 2000625769701636675}
   m_Father: {fileID: 5056170288993030842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1097128847449556960
@@ -401,7 +401,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2000625769701636675}
   m_Layer: 0
-  m_Name: S Sweep points (3)
+  m_Name: S Sweep points
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -416,7 +416,7 @@ Transform:
   m_GameObject: {fileID: 1173299166921629057}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.98999786, y: 0, z: 64.35}
+  m_LocalPosition: {x: -6.470001, y: 1, z: -9.320007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -428,7 +428,7 @@ Transform:
   - {fileID: 4410544164950847069}
   - {fileID: 9001826316148556625}
   - {fileID: 3014075226274082258}
-  m_Father: {fileID: 6909808661933909712}
+  m_Father: {fileID: 5056170288993030842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1356545369814793543
 GameObject:
@@ -796,7 +796,7 @@ Transform:
   m_GameObject: {fileID: 2205901084812000719}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.619999, y: -2.2599998, z: 13.309999}
+  m_LocalPosition: {x: -2.619999, y: -2.337, z: 13.309999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -853,7 +853,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4963628517261356646
 Transform:
   m_ObjectHideFlags: 0
@@ -920,7 +920,7 @@ MonoBehaviour:
     subClusters:
     - subClusterID: 2
       waypoints:
-      - {fileID: 5786922104230335087}
+      - {fileID: 8182577347427200}
   - role: 2
     subClusters:
     - subClusterID: 2
@@ -1319,7 +1319,7 @@ Transform:
   m_GameObject: {fileID: 2970301861821477084}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -56.1, y: -3.92, z: 12.019997}
+  m_LocalPosition: {x: -56.1, y: -4, z: 12.019997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1349,7 +1349,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6324416109075067465
 Transform:
   m_ObjectHideFlags: 0
@@ -1695,7 +1695,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2952329509107077621}
   m_Layer: 0
-  m_Name: S Sweep points (1)
+  m_Name: S Sweep points (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1710,7 +1710,7 @@ Transform:
   m_GameObject: {fileID: 3837395090709277121}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -47.47, y: 0, z: 0.40999985}
+  m_LocalPosition: {x: -54.93, y: 1, z: -73.26001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1724,7 +1724,7 @@ Transform:
   - {fileID: 190872126512218976}
   - {fileID: 330135980421112029}
   - {fileID: 8822542621356451293}
-  m_Father: {fileID: 6909808661933909712}
+  m_Father: {fileID: 5056170288993030842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3878358818730475283
 GameObject:
@@ -1989,7 +1989,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3424683132483247550
 Transform:
   m_ObjectHideFlags: 0
@@ -2279,20 +2279,20 @@ MonoBehaviour:
     subClusters:
     - subClusterID: 3
       waypoints:
-      - {fileID: 5602141331455212590}
+      - {fileID: 4179268352014789928}
   - role: 2
     subClusters:
     - subClusterID: 3
       waypoints:
-      - {fileID: 9035489014853871150}
-      - {fileID: 5043649537488025194}
-      - {fileID: 520795811218654616}
-      - {fileID: 612669134502407688}
-      - {fileID: 1012751510375319301}
-      - {fileID: 8030867494909789674}
-      - {fileID: 5676671692798336852}
-      - {fileID: 1567741973958529160}
-      - {fileID: 3160653358776323690}
+      - {fileID: 3907115408063785187}
+      - {fileID: 7483221469783854511}
+      - {fileID: 5931285451532153121}
+      - {fileID: 6715287019682906697}
+      - {fileID: 936404379913925262}
+      - {fileID: 4993851964255699970}
+      - {fileID: 1816257374162508357}
+      - {fileID: 7221278594028252590}
+      - {fileID: 680989215961498184}
 --- !u!1 &4814428165072152789
 GameObject:
   m_ObjectHideFlags: 0
@@ -2442,7 +2442,7 @@ Transform:
   m_GameObject: {fileID: 5519884316452964618}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.59, y: -2.4499998, z: 5.4400005}
+  m_LocalPosition: {x: -14.59, y: -2.742, z: 5.4400005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2546,7 +2546,7 @@ Transform:
   m_GameObject: {fileID: 5625851184150028578}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.57, y: -2.4499998, z: 5.4400005}
+  m_LocalPosition: {x: -20.57, y: -2.803, z: 5.4400005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2954,7 +2954,7 @@ Transform:
   m_GameObject: {fileID: 6147495512088046753}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.2729988, y: -2.238, z: 22.349998}
+  m_LocalPosition: {x: -2.2729988, y: -2.119, z: 22.349998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3109,7 +3109,7 @@ Transform:
   m_GameObject: {fileID: 6554115170926478297}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -56.1, y: -3.92, z: 12.019997}
+  m_LocalPosition: {x: -56.1, y: -4, z: 12.019997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3333,7 +3333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7484803166531834378
 Transform:
   m_ObjectHideFlags: 0
@@ -3397,7 +3397,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &535625258309806847
 Transform:
   m_ObjectHideFlags: 0
@@ -3595,7 +3595,7 @@ Transform:
   m_GameObject: {fileID: 7887497854711553114}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -56.1, y: -3.92, z: 12.019997}
+  m_LocalPosition: {x: -56.1, y: -4, z: 12.019997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3791,7 +3791,7 @@ Transform:
   m_GameObject: {fileID: 8137837470902134609}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3814,7 +3814,25 @@ MonoBehaviour:
     subClusters:
     - subClusterID: 0
       waypoints:
-      - {fileID: 6909808661933909712}
+      - {fileID: 5023957432070052028}
+      - {fileID: 1780950270320255623}
+      - {fileID: 4254052530819327168}
+      - {fileID: 7687868667707576864}
+      - {fileID: 7874837175839540459}
+      - {fileID: 4410544164950847069}
+      - {fileID: 9001826316148556625}
+      - {fileID: 3014075226274082258}
+    - subClusterID: 1
+      waypoints:
+      - {fileID: 1368064063035772583}
+      - {fileID: 5983648597132038338}
+      - {fileID: 2391368840814680685}
+      - {fileID: 7123264719707878529}
+      - {fileID: 2846083884240014564}
+      - {fileID: 4369795565618592438}
+      - {fileID: 8933847550447399552}
+    - subClusterID: 2
+      waypoints:
       - {fileID: 3851770452247647945}
       - {fileID: 6875842155821040760}
       - {fileID: 8109680416875571314}
@@ -3822,9 +3840,8 @@ MonoBehaviour:
       - {fileID: 8959067836095187436}
       - {fileID: 6829644035291557005}
       - {fileID: 1863291049685050788}
-    - subClusterID: 1
+    - subClusterID: 3
       waypoints:
-      - {fileID: 2952329509107077621}
       - {fileID: 3712136845355262967}
       - {fileID: 1862008780084654664}
       - {fileID: 3092263956097864264}
@@ -3835,27 +3852,6 @@ MonoBehaviour:
       - {fileID: 190872126512218976}
       - {fileID: 330135980421112029}
       - {fileID: 8822542621356451293}
-    - subClusterID: 2
-      waypoints:
-      - {fileID: 6905309130067877691}
-      - {fileID: 1368064063035772583}
-      - {fileID: 5983648597132038338}
-      - {fileID: 2391368840814680685}
-      - {fileID: 7123264719707878529}
-      - {fileID: 2846083884240014564}
-      - {fileID: 4369795565618592438}
-      - {fileID: 8933847550447399552}
-    - subClusterID: 3
-      waypoints:
-      - {fileID: 2000625769701636675}
-      - {fileID: 5023957432070052028}
-      - {fileID: 1780950270320255623}
-      - {fileID: 4254052530819327168}
-      - {fileID: 7687868667707576864}
-      - {fileID: 7874837175839540459}
-      - {fileID: 4410544164950847069}
-      - {fileID: 9001826316148556625}
-      - {fileID: 3014075226274082258}
   - role: 0
     subClusters:
     - subClusterID: 0
@@ -4191,7 +4187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6905309130067877691}
   m_Layer: 0
-  m_Name: S Sweep points (2)
+  m_Name: S Sweep points (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4206,7 +4202,7 @@ Transform:
   m_GameObject: {fileID: 8936637163383063371}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -48.81, y: 0, z: 65.05}
+  m_LocalPosition: {x: -56.27, y: 1, z: -8.620003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4217,7 +4213,7 @@ Transform:
   - {fileID: 2846083884240014564}
   - {fileID: 4369795565618592438}
   - {fileID: 8933847550447399552}
-  m_Father: {fileID: 6909808661933909712}
+  m_Father: {fileID: 5056170288993030842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9128382433558214802
 GameObject:
@@ -4244,7 +4240,7 @@ Transform:
   m_GameObject: {fileID: 9128382433558214802}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -56.1, y: -3.92, z: 12.019997}
+  m_LocalPosition: {x: -56.1, y: -4, z: 12.019997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4383,6 +4379,10 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 8419302139850977458}
+    - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: subCluster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8287124460370564049, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_Name
       value: Patrol Security
@@ -4450,9 +4450,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: role
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: manager
       value: 
       objectReference: {fileID: 4909666418784064226}
+    - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: subCluster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8287124460370564049, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_Name
       value: Patrol Security (4)
@@ -4520,9 +4528,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: role
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: manager
       value: 
       objectReference: {fileID: 4909666418784064226}
+    - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: subCluster
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8287124460370564049, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_Name
       value: Patrol Security (11)
@@ -4588,6 +4604,10 @@ PrefabInstance:
     - target: {fileID: 5838631046002193715, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: role
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: manager
@@ -4726,9 +4746,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: role
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: manager
       value: 
       objectReference: {fileID: 4909666418784064226}
+    - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: subCluster
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8287124460370564049, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_Name
       value: Patrol Security (8)
@@ -4803,6 +4831,10 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 8836654729471249019}
+    - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: subCluster
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8287124460370564049, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_Name
       value: Patrol Security
@@ -5009,6 +5041,10 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 7722116689854774342}
+    - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: subCluster
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8287124460370564049, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_Name
       value: Patrol Security
@@ -5149,6 +5185,10 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 7722116689854774342}
+    - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: subCluster
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8287124460370564049, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_Name
       value: Patrol Security (2)
@@ -5216,9 +5256,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: role
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: manager
       value: 
       objectReference: {fileID: 4909666418784064226}
+    - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: subCluster
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8287124460370564049, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_Name
       value: Patrol Security (6)
@@ -5651,6 +5699,10 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 8836654729471249019}
+    - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: subCluster
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8287124460370564049, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_Name
       value: Patrol Security (2)
@@ -5786,6 +5838,10 @@ PrefabInstance:
     - target: {fileID: 5838631046002193715, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: role
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: manager
@@ -5990,9 +6046,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: role
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: manager
       value: 
       objectReference: {fileID: 4909666418784064226}
+    - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: subCluster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8287124460370564049, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_Name
       value: Patrol Security (3)
@@ -6067,6 +6131,10 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 8419302139850977458}
+    - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: subCluster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8287124460370564049, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_Name
       value: Patrol Security (2)
@@ -6212,9 +6280,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: role
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: manager
       value: 
       objectReference: {fileID: 4909666418784064226}
+    - target: {fileID: 5992536504819412791, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
+      propertyPath: subCluster
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8287124460370564049, guid: 8a5dffe249b13ac438e48768074417e6, type: 3}
       propertyPath: m_Name
       value: Patrol Security (10)

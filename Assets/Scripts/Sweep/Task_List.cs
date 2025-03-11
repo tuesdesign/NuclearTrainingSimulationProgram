@@ -31,16 +31,6 @@ public class Task_List : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int index = 0;
-        foreach (SweepNavigator change in security)
-        {
-            if (change.GetComponent<RadiationDetection>().getThreSholdReached())
-            {
-                Debug.LogWarning("ALERT!!! " + security[index] + " Found Radiation Detected");
-            }
-
-            index++;
-        }
         switch (sweepMode)
         {
             case 0 :

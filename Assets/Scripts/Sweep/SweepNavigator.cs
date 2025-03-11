@@ -48,8 +48,7 @@ public class SweepNavigator : MonoBehaviour
 
     void SetNewTarget()
     {
-        target = manager?.GetTargetTransform(npcRole, subCluster); // Get next target from SweepManager
-        
+        target = manager?.GetTargetTransform(npcRole, subCluster, ref index); // Get next target from SweepManager
         if (target == null)
         {
             if (DEBUG) Debug.LogWarning($"No waypoints found for {npcRole} in sub-cluster {subCluster}");
@@ -75,11 +74,6 @@ public class SweepNavigator : MonoBehaviour
     public void newRole(Role newNPCRole)
     {
         npcRole = newNPCRole;
-    }
-
-    public void newIndex(int newIndex)
-    {
-        index = newIndex;
     }
 
     public SecurityRole Role()
