@@ -10,6 +10,7 @@ TagManager:
   - LevelEditorManager
   - ItemImage
   - ParkingPoint
+  - Car
   layers:
   - Default
   - TransparentFX
