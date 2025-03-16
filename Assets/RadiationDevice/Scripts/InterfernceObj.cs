@@ -52,9 +52,11 @@ public class InterfernceObj : MonoBehaviour
     //method for getting distance of object to interference center
     public float GetDistance(Vector3 position)
     {
-        float val = ((transform.position - position).magnitude) / (size/2);
+        float val = ((position - transform.position).magnitude) / (size/2);
 
         val = Mathf.Clamp(val, 0, 1);
+
+        val = 1 - val;
 
         return val;
         
