@@ -16,7 +16,7 @@ public class RadiationDeviceRandomizer : MonoBehaviour
     void Start()
     {
         //Randomize the Index who will have the nuclear device
-        indexOfPersonWithDevice = Random.Range(0, maxIndexOfPersonWithDevice + 1);
+        indexOfPersonWithDevice = Random.Range(1, maxIndexOfPersonWithDevice + 1);
     }
 
     // Update is called once per frame
