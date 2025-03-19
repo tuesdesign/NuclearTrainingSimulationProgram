@@ -13,11 +13,10 @@ public class GeigerCounter : MonoBehaviour
 
     void Update()
     {
-        float detectedRadAmt = radiationDetection.DetectedRadAmt;
-        slider.value = detectedRadAmt;
+        
 
         // Update the arrow's position based on the slider value
-        UpdateArrowPosition(detectedRadAmt);
+        
     }
 
     void UpdateArrowPosition(float value)
@@ -34,5 +33,13 @@ public class GeigerCounter : MonoBehaviour
 
         // Update the arrow's anchored position
         arrow.anchoredPosition = new Vector2(arrowX, arrow.anchoredPosition.y);
+    }
+
+    public void receiveData(float value)
+    {
+        
+        slider.value = value;
+
+        UpdateArrowPosition(value);
     }
 }

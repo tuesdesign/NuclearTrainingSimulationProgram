@@ -49,16 +49,18 @@ public class RadiationDetection : MonoBehaviour
 
     private InterfernceObj _interferenceObj;
     public InterfernceObj InterferenceObj { private get { return _interferenceObj; } set { _interferenceObj = value; } }
+
+    [SerializeField] NetworkManager networkManager;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        networkManager = FindObjectOfType<NetworkManager>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //Resets detected radiation amount at start of every frame so it doesn't scale improperly
         _detectedRadAmt = 0;
@@ -110,6 +112,7 @@ public class RadiationDetection : MonoBehaviour
 
         //prints out debug values
         Debug.Log("Detected Radiation Amount: " + _detectedRadAmt + "   Threshold Reached? " + _thresholdReached + "    Interference? " + _interference);
+        networkManager.ReceiveDataFromSensor(_detectedRadAmt, this);
     }
 
 
