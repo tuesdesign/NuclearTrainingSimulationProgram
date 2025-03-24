@@ -65,9 +65,9 @@ public class ClusterNavigator : MonoBehaviour
 
     void SetNewTarget()
     {
-        target = clusterManager?.GetTargetTransform(npcRole, subCluster);
+        target = clusterManager?.GetTargetTransform(npcRole, subCluster);// This will ask the cluster manager for a target and will send it the role and subcluster, it is 
         
-        if (target == null)
+        if (target == null)//of the cluster manager is not set up properly it will let the send out a debug
         {
             if (DEBUG) Debug.LogWarning($"No waypoints found for {npcRole} in sub-cluster {subCluster}");
             return;
