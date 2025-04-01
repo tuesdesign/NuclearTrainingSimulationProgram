@@ -57,7 +57,6 @@ public class PersonNavigator : MonoBehaviour
         //If in a setup scene
         if (currentSceneType == SceneTypeManager.SceneType.Setup)
         {
-            Debug.Log("Changed");
             ChangeTargetType(PointOfInterestBehaviour.pointOfInterestType.dropoff);
         }
 
@@ -71,7 +70,7 @@ public class PersonNavigator : MonoBehaviour
     {
         //getAllTargets();
         if (DEBUG) print("Getting random waypoint");
-        return waypoints[Random.Range(0, waypoints.Count)]; // Return a random waypoint from the list
+        return waypoints[Random.Range(0, waypoints.Count - 1)]; // Return a random waypoint from the list
     }
 
     public void getAllTargets()
@@ -87,6 +86,12 @@ public class PersonNavigator : MonoBehaviour
 
     protected bool IsAtTarget()
     {
+        //If there is no target find a target
+        if (target == null)
+        {
+            SetNewTarget();
+        }
+
         if (Vector3.Distance(transform.position, target.position) < acceptableDistance) // Return true if the agent is within an acceptable distance of the target
         {
             if (DEBUG) print("Arrived at Target");
@@ -96,33 +101,25 @@ public class PersonNavigator : MonoBehaviour
 
     public void SetNewTarget()
     {
-        int noOfTries = 0;
-        Transform oldTarget = target;
-        while (noOfTries < maxNumberOfTargetFindTries)
+        
+        
+
+        PointOfInterestBehaviour waypoint = GetRandomWaypoint();
+
+
+        target = waypoint.GetNavTarget(this); // Get a new target
+
+        //If there isn't a target or target doesn't match current behaviour find a new one
+            
+        if (waypoint.poiType != currentTargetType || target == null)
         {
-            noOfTries++;
-
-            PointOfInterestBehaviour waypoint = GetRandomWaypoint();
-
-
-            target = waypoint.GetNavTarget(gameObject.GetComponent<PersonNavigator>()); // Get a new target
-
-            //If there isn't a target or target doesn't match current behaviour find a new one
-            if(target == null)
-            {
-                Debug.Log("FU");
-            }
-            if (waypoint.poiType != currentTargetType)
-            {
-                Debug.Log("Waypoint:" + waypoint.poiType);
-                Debug.Log("CurrentTargetType:" + currentTargetType);
-                target = oldTarget;
-                continue;
-            }
-
-
-
+            SetNewTarget();
+            return;
         }
+
+
+
+        
 
         StartCoroutine("WaitAtWaypoint"); // Start the coroutine to wait at the waypoint
 
@@ -153,6 +150,8 @@ public class PersonNavigator : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
+        
+
         //If the person is at their desired destination
         if (IsAtTarget())
         {
@@ -164,7 +163,8 @@ public class PersonNavigator : MonoBehaviour
                 //If person was dropping off, go back to picking up from vehicles.
                 if(currentTargetType == PointOfInterestBehaviour.pointOfInterestType.dropoff)
                 {
-                    ChangeTargetType(PointOfInterestBehaviour.pointOfInterestType.pickup);
+                    if(sceneTypeManager.IsThereOfType(PointOfInterestBehaviour.pointOfInterestType.pickup)) ChangeTargetType(PointOfInterestBehaviour.pointOfInterestType.pickup);
+                    else ChangeTargetType(PointOfInterestBehaviour.pointOfInterestType.standard);
                 }
                 //If person was picking up from a car, find a place to drop off
                 else if (currentTargetType == PointOfInterestBehaviour.pointOfInterestType.pickup)
@@ -176,7 +176,11 @@ public class PersonNavigator : MonoBehaviour
                 SetNewTarget(); // This one's just a sentence.
             }
         }
+
+        
+
     }
+
 
     protected virtual void UpdateSceneType()
     {

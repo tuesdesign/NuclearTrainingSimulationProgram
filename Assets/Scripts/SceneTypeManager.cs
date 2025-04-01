@@ -24,25 +24,31 @@ public class SceneTypeManager : MonoBehaviour
         //If the current scene is a setup for the event
         if(sceneType == SceneType.Setup)
         {
-            pointsOfInterest = FindObjectsOfType<PointOfInterestBehaviour>();
-
-            bool thereIsValidDropOff = false;
-
-            // Check if there is a valid drop off point in the scene
-            foreach (PointOfInterestBehaviour pointOfInterest in pointsOfInterest) { 
-                if(pointOfInterest.poiType == PointOfInterestBehaviour.pointOfInterestType.dropoff)
-                {
-                    thereIsValidDropOff = true;
-                }
-            }
+            
             //If there is no valid drop off point
-            if (!thereIsValidDropOff) {
+            if (!IsThereOfType(PointOfInterestBehaviour.pointOfInterestType.dropoff)) {
                 Debug.LogWarning("Play prevented. There is no valid drop off point in the scene. Please add a POI object with type drop off or change the scene out of setup type");
                 //Stop Play Mode
                 EditorApplication.isPlaying = false;
             }
 
         }
+    }
+    public bool IsThereOfType(PointOfInterestBehaviour.pointOfInterestType type)
+    {
+        pointsOfInterest = FindObjectsOfType<PointOfInterestBehaviour>();
+
+        bool thereIsValid = false;
+
+        // Check if there is a valid drop off point in the scene
+        foreach (PointOfInterestBehaviour pointOfInterest in pointsOfInterest)
+        {
+            if (pointOfInterest.poiType == type)
+            {
+                thereIsValid = true;
+            }
+        }
+        return thereIsValid;
     }
 }
 
