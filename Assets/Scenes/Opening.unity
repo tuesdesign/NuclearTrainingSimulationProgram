@@ -227,6 +227,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 31704886}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -548,6 +549,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 39956560}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -675,6 +677,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 45661969}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -863,6 +866,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 55424551}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -1102,6 +1106,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 59044425}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -1817,6 +1822,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 82554454}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -3220,6 +3226,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 112725915}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -3501,7 +3508,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.06666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 6ff13c9ff84d06d4784c0e548e3b583c, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: ce6b34f3b2676554a9f38aad02565db3, type: 2}
   m_BuildHeightMesh: 0
 --- !u!1001 &123028930
 PrefabInstance:
@@ -5917,6 +5924,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 170703899}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -6044,6 +6052,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 183109172}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -7453,6 +7462,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 223578373}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -7580,6 +7590,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 245086756}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -8904,6 +8915,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 272523882}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -9522,6 +9534,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 296163206}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -11239,6 +11252,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 325136014}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -11893,6 +11907,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 340877860}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -12020,6 +12035,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 343347529}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -13125,6 +13141,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 375419540}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -13371,6 +13388,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 383473179}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -13993,6 +14011,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 420809921}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -14758,6 +14777,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 439727740}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -15124,6 +15144,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 454650594}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -15251,6 +15272,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 463191233}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -15754,6 +15776,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 467835198}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -16381,6 +16404,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 489182838}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -16573,6 +16597,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 492430848}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -17076,6 +17101,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 499975107}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -20349,6 +20375,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 581628415}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -20551,6 +20578,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 591258910}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -21067,6 +21095,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 613886847}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -21194,6 +21223,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 620131524}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -21440,6 +21470,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 637907032}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -22380,6 +22411,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 658123985}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -22771,6 +22803,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 676801494}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -23776,6 +23809,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 717520483}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -23908,6 +23942,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 728056304}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -24035,6 +24070,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 733071449}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -24188,6 +24224,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 738083364}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -25519,6 +25556,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 786858289}
   target: {fileID: 702967784}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -28119,6 +28157,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 836961432}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -28246,6 +28285,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 839229709}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -28373,6 +28413,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 851390361}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -29260,6 +29301,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 868887621}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -29656,6 +29698,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 895865307}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -31044,6 +31087,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 932700216}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -32841,6 +32885,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 979945019}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -33344,6 +33389,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 984030922}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -34604,6 +34650,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1016597824}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -35227,6 +35274,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1036804496}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -35415,6 +35463,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1044463905}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -35542,6 +35591,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1047127523}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -35749,6 +35799,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1080518162}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -35876,6 +35927,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1085338903}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -36498,6 +36550,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1093901491}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -36863,6 +36916,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1106564693}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -37200,6 +37254,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1119764906}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -38016,6 +38071,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1132059847}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -38143,6 +38199,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1139158470}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -38569,6 +38626,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1152633677}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -39072,6 +39130,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1154283406}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -39199,6 +39258,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1163630471}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -39445,6 +39505,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1165460650}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -39904,6 +39965,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1183314428}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -40411,6 +40473,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1194082748}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -42408,6 +42471,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1243491539}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -42535,6 +42599,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1246378542}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -43726,6 +43791,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1268415629}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -44608,6 +44674,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1280886009}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -45491,6 +45558,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1288008056}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -45618,6 +45686,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1295753866}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -45720,6 +45789,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1300091917}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -45872,6 +45942,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1302602395}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -46144,6 +46215,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1308172511}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -46500,6 +46572,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1320662658}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -46627,6 +46700,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1327601410}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -46859,6 +46933,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1348804700}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -47320,6 +47395,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1362619277}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -47447,6 +47523,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1366033264}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -47574,6 +47651,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1366313799}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -48222,6 +48300,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1399645975}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -48349,6 +48428,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1407204280}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -48852,6 +48932,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1411032547}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -53710,6 +53791,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1546609784}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -53961,6 +54043,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1568991219}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -54088,6 +54171,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1581911920}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -55283,6 +55367,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1626239189}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -55410,6 +55495,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1628057027}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -57700,6 +57786,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1681052084}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -59194,6 +59281,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1721091633}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -59321,6 +59409,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1723440750}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -59448,6 +59537,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1727873613}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -61058,6 +61148,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1772591515}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -61185,6 +61276,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1773510411}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -61714,6 +61806,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1780428339}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -62442,6 +62535,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1830342310}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -64110,6 +64204,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1856320548}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -64736,6 +64831,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1862517648}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -65239,6 +65335,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1881229484}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -67130,6 +67227,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1923560045}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -67752,6 +67850,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1937611465}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -67879,6 +67978,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1939128976}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -68006,6 +68106,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1952413514}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -68133,6 +68234,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1956695215}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -70098,6 +70200,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 1994020635}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -70286,6 +70389,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 2013865912}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -70413,6 +70517,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 2014680769}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -70540,6 +70645,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 2023487080}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -70667,6 +70773,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 2026739788}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -71000,6 +71107,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 2050785037}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -71188,6 +71296,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 2054495775}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -71380,6 +71489,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 2063163473}
   target: {fileID: 702967784}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -73267,6 +73377,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 2117502945}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -73420,6 +73531,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 2127391084}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -73547,6 +73659,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 2131670761}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
@@ -73674,6 +73787,7 @@ MonoBehaviour:
   waiting: 0
   animator: {fileID: 2138299379}
   target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
   waypointTag: POI
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0

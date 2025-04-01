@@ -9,6 +9,7 @@ public class CarNavigator : PersonNavigator
     [SerializeField] int numberOfPeople;
     [SerializeField] GameObject carPOI;
 
+    [SerializeField] Transform peopleSpawner; //Location where people would exit the vehicle
     public override void Awake()
     {
         sceneTypeManager = FindObjectOfType<SceneTypeManager>();
@@ -63,7 +64,7 @@ public class CarNavigator : PersonNavigator
     {
         for (int i = 0; i < numberOfPeople; i++) { 
         
-            Instantiate(peoplePrefab, transform.position, transform.rotation);
+            Instantiate(peoplePrefab, peopleSpawner.position, peopleSpawner.rotation);
         
         }
 

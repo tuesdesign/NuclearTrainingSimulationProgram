@@ -68,7 +68,7 @@ public class PersonNavigator : MonoBehaviour
 
     PointOfInterestBehaviour GetRandomWaypoint()
     {
-        //getAllTargets();
+        getAllTargets();
         if (DEBUG) print("Getting random waypoint");
         return waypoints[Random.Range(0, waypoints.Count - 1)]; // Return a random waypoint from the list
     }
@@ -110,16 +110,11 @@ public class PersonNavigator : MonoBehaviour
         target = waypoint.GetNavTarget(this); // Get a new target
 
         //If there isn't a target or target doesn't match current behaviour find a new one
-            
-        if (waypoint.poiType != currentTargetType || target == null)
+        if ((waypoint.poiType != currentTargetType || target == null) )
         {
             SetNewTarget();
             return;
         }
-
-
-
-        
 
         StartCoroutine("WaitAtWaypoint"); // Start the coroutine to wait at the waypoint
 
@@ -139,7 +134,11 @@ public class PersonNavigator : MonoBehaviour
         //animator.Play("Walking"); // Play the walk animation
         animator.SetBool("Walking", true); // Set the animator to walking
         agent.SetDestination(target.position); // Then, set the agent's destination to it
+
+        //If person was dropping off, go back to picking up from vehicles.
+        SwitchTargetTypeDuringSetup();
         
+
     }
 
     public void SetTargetDestination()
@@ -160,19 +159,6 @@ public class PersonNavigator : MonoBehaviour
             //animator.Play("Idle"); // Play the idle animation
             if (!waiting)
             {
-                //If person was dropping off, go back to picking up from vehicles.
-                if(currentTargetType == PointOfInterestBehaviour.pointOfInterestType.dropoff)
-                {
-                    if(sceneTypeManager.IsThereOfType(PointOfInterestBehaviour.pointOfInterestType.pickup)) ChangeTargetType(PointOfInterestBehaviour.pointOfInterestType.pickup);
-                    else ChangeTargetType(PointOfInterestBehaviour.pointOfInterestType.standard);
-                }
-                //If person was picking up from a car, find a place to drop off
-                else if (currentTargetType == PointOfInterestBehaviour.pointOfInterestType.pickup)
-                {
-                    ChangeTargetType(PointOfInterestBehaviour.pointOfInterestType.dropoff);
-                }
-
-
                 SetNewTarget(); // This one's just a sentence.
             }
         }
@@ -181,6 +167,20 @@ public class PersonNavigator : MonoBehaviour
 
     }
 
+    void SwitchTargetTypeDuringSetup()
+    {
+        //If person was dropping off, go back to picking up from vehicles.
+        if (currentTargetType == PointOfInterestBehaviour.pointOfInterestType.dropoff)
+        {
+            if (sceneTypeManager.IsThereOfType(PointOfInterestBehaviour.pointOfInterestType.pickup)) ChangeTargetType(PointOfInterestBehaviour.pointOfInterestType.pickup);
+            else ChangeTargetType(PointOfInterestBehaviour.pointOfInterestType.standard);
+        }
+        //If person was picking up from a car, find a place to drop off
+        else if (currentTargetType == PointOfInterestBehaviour.pointOfInterestType.pickup)
+        {
+            ChangeTargetType(PointOfInterestBehaviour.pointOfInterestType.dropoff);
+        }
+    }
 
     protected virtual void UpdateSceneType()
     {
