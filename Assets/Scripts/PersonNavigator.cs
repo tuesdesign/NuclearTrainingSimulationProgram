@@ -48,8 +48,13 @@ public class PersonNavigator : MonoBehaviour
 
     [SerializeField] PointOfInterestBehaviour.pointOfInterestType currentTargetType;
 
+    [SerializeField, Range(0, 1)] float chanceToBeAFollower;
+    [SerializeField] bool follower;
+    [SerializeField] PersonNavigator personFollowed;
+
     public virtual void Awake()
     {
+
         //Get Scene Manager
         sceneTypeManager = FindObjectOfType<SceneTypeManager>();
         UpdateSceneType();
@@ -61,10 +66,45 @@ public class PersonNavigator : MonoBehaviour
         }
 
         agent = GetComponent<NavMeshAgent>();
-        getAllTargets();
-        SetNewTarget();
+
+        RandomizeFollowingBehaviour();
+
+        //Change behaviour depending on if they are in a group or not
+        if (!follower)
+        {
+            getAllTargets();
+            SetNewTarget();
+        } else
+        {
+            personFollowed = GetRandomPerson();
+        }
 
     }
+
+    void RandomizeFollowingBehaviour()
+    {
+        if(Random.value < chanceToBeAFollower)
+        {
+            follower = true;
+        }
+    }
+
+    PersonNavigator GetRandomPerson()
+    {
+        PersonNavigator[] persons = FindObjectsOfType<PersonNavigator>();
+        
+        PersonNavigator randomPerson = persons[Random.Range(0, persons.Length)];
+
+        //Find someone else if random person chosen is self
+        if(randomPerson == this)
+        {
+            return GetRandomPerson();
+        } else
+        {
+            return randomPerson;
+        }
+    }
+    
 
     PointOfInterestBehaviour GetRandomWaypoint()
     {
@@ -149,10 +189,10 @@ public class PersonNavigator : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
-        
 
-        //If the person is at their desired destination
-        if (IsAtTarget())
+
+        //If the person is at their desired destination and not in a group/pair
+        if (IsAtTarget() && !follower)
         {
             agent.isStopped = true; // Stop
             animator.SetBool("Walking", false); // Set the animator to not walking
@@ -163,7 +203,20 @@ public class PersonNavigator : MonoBehaviour
             }
         }
 
-        
+        //If the person is not near their group/pair
+        if(!IsAtTarget() && follower)
+        {
+            agent.isStopped = false; // Stop
+            animator.SetBool("Walking", true);
+            target = personFollowed.transform; //Set Target Location to the location of the person being followed
+            agent.SetDestination(personFollowed.transform.position); //Go to the group
+        } 
+        //If the person is near
+        else if (IsAtTarget() && follower)
+        {
+            agent.isStopped = true; // Stop
+            animator.SetBool("Walking", false);
+        }
 
     }
 

@@ -172,7 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBoothManager: {fileID: 1235467358}
   assignedPerson: {fileID: 0}
-  canServe: 1
+  canServe: 0
   servingDistance: 2
   servingTime: 0
   servingTimeLeft: 0
@@ -413,6 +413,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &31704884
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -799,6 +802,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &39956558
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -927,6 +933,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &45661967
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1177,6 +1186,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &55424549
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1417,6 +1429,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &59044423
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1783,6 +1798,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &82554456
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2389,6 +2407,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &112725913
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3412,6 +3433,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &170703897
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3540,6 +3564,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &183109170
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4440,6 +4467,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &223578371
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4629,6 +4659,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &245086754
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5078,6 +5111,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &272523880
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5715,6 +5751,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &296163204
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6265,6 +6304,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &325136012
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6694,6 +6736,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &340877858
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6883,6 +6928,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &343347527
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7480,6 +7528,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &375419538
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7722,6 +7773,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &383473177
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7939,6 +7993,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &420809919
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8238,6 +8295,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &439727738
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8471,6 +8531,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &454650592
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8599,6 +8662,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &463191231
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8815,6 +8881,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &467835196
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -9088,6 +9157,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &489182836
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -9216,6 +9288,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &492430846
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -9432,6 +9507,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &499975105
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10991,6 +11069,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &581628413
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11194,6 +11275,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &591258908
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11597,6 +11681,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &613886845
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11786,6 +11873,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &620131522
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11919,6 +12009,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &637907030
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12405,6 +12498,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &658123983
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12755,6 +12851,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &676801492
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13297,6 +13396,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &717520481
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13430,6 +13532,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &728056302
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13683,6 +13788,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &733071447
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13837,6 +13945,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &738083362
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14550,6 +14661,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &786858291
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15318,6 +15432,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &836961430
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15446,6 +15563,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &839229707
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15574,6 +15694,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &851390359
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15939,6 +16062,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &868887619
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -16451,6 +16577,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &895865305
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17011,6 +17140,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &932700214
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -18258,6 +18390,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &979945017
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -18474,6 +18609,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &984030920
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -19064,6 +19202,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1016597822
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -19346,6 +19487,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1036804494
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -19535,6 +19679,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1044463903
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -19663,6 +19810,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1047127521
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -19991,6 +20141,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1080518160
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20180,6 +20333,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1085338901
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20401,6 +20557,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1093901489
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20539,6 +20698,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1106564691
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20816,6 +20978,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1119764904
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -21112,6 +21277,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1132059845
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -21240,6 +21408,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1139158468
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -21378,6 +21549,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1152633675
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -21590,6 +21764,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1154283404
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -21718,6 +21895,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1163630469
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -21851,6 +22031,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1165460648
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22183,6 +22366,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1183314426
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22399,6 +22585,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1194082746
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23227,6 +23416,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1243491537
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23355,6 +23547,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1246378540
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23909,6 +24104,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1268415627
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24208,6 +24406,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1280886007
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24508,6 +24709,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1288008054
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24636,6 +24840,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1295753864
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24739,6 +24946,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1300091919
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24892,6 +25102,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1302602393
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -25112,6 +25325,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1308172509
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -25419,6 +25635,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1320662656
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -25547,6 +25766,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1327601408
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -25800,6 +26022,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1348804698
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -26199,6 +26424,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1362619275
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -26327,6 +26555,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0.9
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1366033262
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -26455,6 +26686,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1366313797
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -26758,6 +26992,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1399645973
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -26886,6 +27123,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1407204278
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -27098,6 +27338,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1411032545
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -29247,6 +29490,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1546609782
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -29380,6 +29626,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1568991217
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -29508,6 +29757,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1581911918
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -29999,6 +30251,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1626239187
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -30127,6 +30382,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1628057025
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -31016,6 +31274,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1681052082
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -31804,6 +32065,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1721091631
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -31932,6 +32196,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1723440748
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -32060,6 +32327,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1727873611
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -32930,6 +33200,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1772591513
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -33058,6 +33331,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1773510409
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -33296,6 +33572,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1780428337
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -33610,6 +33889,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1830342312
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -34172,6 +34454,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1856320546
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -34393,6 +34678,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1862517646
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -34791,6 +35079,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1881229482
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -35410,6 +35701,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1923560043
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -35692,6 +35986,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1937611463
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -35820,6 +36117,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1939128974
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -35948,6 +36248,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1952413512
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -36076,6 +36379,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1956695213
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -37075,6 +37381,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1994020633
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -37330,6 +37639,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2013865910
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -37458,6 +37770,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2014680767
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -37586,6 +37901,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2023487078
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -37714,6 +38032,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2026739786
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -38495,6 +38816,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2050785035
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -38623,6 +38947,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0.9
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2054495773
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -38873,6 +39200,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2063163471
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -39665,6 +39995,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2117502943
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -39819,6 +40152,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2127391082
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -40008,6 +40344,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2131670759
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -40136,6 +40475,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2138299377
 NavMeshAgent:
   m_ObjectHideFlags: 0
