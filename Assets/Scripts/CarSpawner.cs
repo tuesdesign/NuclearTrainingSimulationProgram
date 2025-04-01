@@ -6,8 +6,7 @@ public class CarSpawner : MonoBehaviour
 {
     [SerializeField] float spawnInterval;
 
-    [SerializeField]
-    GameObject carPrefab;
+    [SerializeField] GameObject carPrefab;
 
     [SerializeField]
     List<PointOfInterestBehaviour> waypoints; // A list of all possible waypoints to target

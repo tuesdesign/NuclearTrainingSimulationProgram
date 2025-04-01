@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class PointOfInterestBehaviour : MonoBehaviour
 {
-    
+    public enum pointOfInterestType
+    {
+        standard,
+        pickup,
+        dropoff
+    }
+
+    public pointOfInterestType poiType = pointOfInterestType.standard;
+
     public virtual Transform GetNavTarget(PersonNavigator person)
     {
-        Debug.Log("Get Nav Target POI");
         return transform;
     }
 }

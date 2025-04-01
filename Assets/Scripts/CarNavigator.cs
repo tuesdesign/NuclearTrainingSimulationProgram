@@ -7,6 +7,20 @@ public class CarNavigator : PersonNavigator
 {
     [SerializeField] GameObject peoplePrefab;
     [SerializeField] int numberOfPeople;
+    [SerializeField] GameObject carPOI;
+
+    public override void Awake()
+    {
+        sceneTypeManager = FindObjectOfType<SceneTypeManager>();
+        UpdateSceneType();
+
+        //Car POI should always be standard
+        ChangeTargetType(PointOfInterestBehaviour.pointOfInterestType.standard);
+
+        agent = GetComponent<NavMeshAgent>();
+        getAllTargets();
+        SetNewTarget();
+    }
 
     protected override void Update()
     {
@@ -24,8 +38,13 @@ public class CarNavigator : PersonNavigator
                 
                 
                 //Spawn people
-
                 SpawnPeople();
+
+                if(currentSceneType == SceneTypeManager.SceneType.Setup)
+                {
+                    //Turn on pickup POI
+                    carPOI.SetActive(true);
+                }
 
 
             }

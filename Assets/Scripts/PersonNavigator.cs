@@ -6,6 +6,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI; 
 
@@ -38,18 +39,37 @@ public class PersonNavigator : MonoBehaviour
     //private AnimationClip WalkAnimation; // The animator component for the agent
 
     [SerializeField] protected Transform target; // The current target waypoint
+    [SerializeField, Range(1,100)] protected int maxNumberOfTargetFindTries;
 
     [SerializeField] string waypointTag = "POI";
 
-    void Awake()
+    [SerializeField] protected SceneTypeManager sceneTypeManager;
+    [SerializeField] protected SceneTypeManager.SceneType currentSceneType;
+
+    [SerializeField] PointOfInterestBehaviour.pointOfInterestType currentTargetType;
+
+    public virtual void Awake()
     {
+        //Get Scene Manager
+        sceneTypeManager = FindObjectOfType<SceneTypeManager>();
+        UpdateSceneType();
+
+        //If in a setup scene
+        if (currentSceneType == SceneTypeManager.SceneType.Setup)
+        {
+            Debug.Log("Changed");
+            ChangeTargetType(PointOfInterestBehaviour.pointOfInterestType.dropoff);
+        }
+
         agent = GetComponent<NavMeshAgent>();
         getAllTargets();
         SetNewTarget();
+
     }
 
     PointOfInterestBehaviour GetRandomWaypoint()
     {
+        //getAllTargets();
         if (DEBUG) print("Getting random waypoint");
         return waypoints[Random.Range(0, waypoints.Count)]; // Return a random waypoint from the list
     }
@@ -76,17 +96,36 @@ public class PersonNavigator : MonoBehaviour
 
     public void SetNewTarget()
     {
-        
-        target = GetRandomWaypoint().GetNavTarget(gameObject.GetComponent<PersonNavigator>()); // Get a new target
-        //If there isn't a target find a new one
-        if (target == null)
+        int noOfTries = 0;
+        Transform oldTarget = target;
+        while (noOfTries < maxNumberOfTargetFindTries)
         {
-            SetNewTarget();
-            return;
-            
+            noOfTries++;
+
+            PointOfInterestBehaviour waypoint = GetRandomWaypoint();
+
+
+            target = waypoint.GetNavTarget(gameObject.GetComponent<PersonNavigator>()); // Get a new target
+
+            //If there isn't a target or target doesn't match current behaviour find a new one
+            if(target == null)
+            {
+                Debug.Log("FU");
+            }
+            if (waypoint.poiType != currentTargetType)
+            {
+                Debug.Log("Waypoint:" + waypoint.poiType);
+                Debug.Log("CurrentTargetType:" + currentTargetType);
+                target = oldTarget;
+                continue;
+            }
+
+
+
         }
-        
+
         StartCoroutine("WaitAtWaypoint"); // Start the coroutine to wait at the waypoint
+
     }
 
     public void SetNewTarget(Transform trgt)
@@ -122,8 +161,30 @@ public class PersonNavigator : MonoBehaviour
             //animator.Play("Idle"); // Play the idle animation
             if (!waiting)
             {
+                //If person was dropping off, go back to picking up from vehicles.
+                if(currentTargetType == PointOfInterestBehaviour.pointOfInterestType.dropoff)
+                {
+                    ChangeTargetType(PointOfInterestBehaviour.pointOfInterestType.pickup);
+                }
+                //If person was picking up from a car, find a place to drop off
+                else if (currentTargetType == PointOfInterestBehaviour.pointOfInterestType.pickup)
+                {
+                    ChangeTargetType(PointOfInterestBehaviour.pointOfInterestType.dropoff);
+                }
+
+
                 SetNewTarget(); // This one's just a sentence.
             }
         }
+    }
+
+    protected virtual void UpdateSceneType()
+    {
+        currentSceneType = sceneTypeManager.GetSceneType();
+    }
+
+    protected virtual void ChangeTargetType(PointOfInterestBehaviour.pointOfInterestType type)
+    {
+        currentTargetType = type;
     }
 }

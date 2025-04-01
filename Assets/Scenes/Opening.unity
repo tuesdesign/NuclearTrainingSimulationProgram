@@ -228,6 +228,9 @@ MonoBehaviour:
   animator: {fileID: 31704886}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &31704884
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -471,6 +474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &39956554 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ac17dfcee8101734aa663d460c3011cb, type: 3}
@@ -545,6 +549,9 @@ MonoBehaviour:
   animator: {fileID: 39956560}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &39956558
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -669,6 +676,9 @@ MonoBehaviour:
   animator: {fileID: 45661969}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &45661967
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -854,6 +864,9 @@ MonoBehaviour:
   animator: {fileID: 55424551}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &55424549
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1090,6 +1103,9 @@ MonoBehaviour:
   animator: {fileID: 59044425}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &59044423
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1747,6 +1763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &82554450 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 787625afe6806a14285228e0e805c2aa, type: 3}
@@ -1801,6 +1818,9 @@ MonoBehaviour:
   animator: {fileID: 82554454}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &82554456
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1968,6 +1988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1001 &89543477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2886,6 +2907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &101197829
 GameObject:
   m_ObjectHideFlags: 0
@@ -3124,6 +3146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &112725909 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ac17dfcee8101734aa663d460c3011cb, type: 3}
@@ -3198,6 +3221,9 @@ MonoBehaviour:
   animator: {fileID: 112725915}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &112725913
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3277,7 +3303,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071067, y: 0.000000030908616, z: -0.000000030908623, w: 0.7071068}
   m_LocalPosition: {x: -85.87, y: 27.4455, z: 2}
-  m_LocalScale: {x: 2.0125, y: 3.9692326, z: 119.39806}
+  m_LocalScale: {x: 2.0125, y: 5.1068144, z: 119.39806}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 563581219}
@@ -4347,6 +4373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &129230877
 GameObject:
   m_ObjectHideFlags: 0
@@ -4465,6 +4492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1001 &129301411
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5890,6 +5918,9 @@ MonoBehaviour:
   animator: {fileID: 170703899}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &170703897
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6014,6 +6045,9 @@ MonoBehaviour:
   animator: {fileID: 183109172}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &183109170
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7420,6 +7454,9 @@ MonoBehaviour:
   animator: {fileID: 223578373}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &223578371
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7544,6 +7581,9 @@ MonoBehaviour:
   animator: {fileID: 245086756}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &245086754
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8865,6 +8905,9 @@ MonoBehaviour:
   animator: {fileID: 272523882}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &272523880
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -9480,6 +9523,9 @@ MonoBehaviour:
   animator: {fileID: 296163206}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &296163204
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11194,6 +11240,9 @@ MonoBehaviour:
   animator: {fileID: 325136014}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &325136012
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11244,6 +11293,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ac17dfcee8101734aa663d460c3011cb, type: 3}
   m_PrefabInstance: {fileID: 789975984}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &325250899
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -4233800277452027359, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: poiType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768191132896637195, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_Name
+      value: POI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768191132896637195, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 81.88837
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 71.083336
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
 --- !u!4 &325422604 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7696202035179064523, guid: 129edd62b5d88c14e80dda39819fe0be, type: 3}
@@ -11780,6 +11894,9 @@ MonoBehaviour:
   animator: {fileID: 340877860}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &340877858
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11904,6 +12021,9 @@ MonoBehaviour:
   animator: {fileID: 343347529}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &343347527
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12552,6 +12672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1001 &368574883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13005,6 +13126,9 @@ MonoBehaviour:
   animator: {fileID: 375419540}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &375419538
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13173,6 +13297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &383473173 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ed7960a7df24cb34facc00cf1f21ff2a, type: 3}
@@ -13247,6 +13372,9 @@ MonoBehaviour:
   animator: {fileID: 383473179}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &383473177
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13791,6 +13919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &420809915 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ac17dfcee8101734aa663d460c3011cb, type: 3}
@@ -13865,6 +13994,9 @@ MonoBehaviour:
   animator: {fileID: 420809921}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &420809919
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14033,6 +14165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &423425556
 GameObject:
   m_ObjectHideFlags: 0
@@ -14626,6 +14759,9 @@ MonoBehaviour:
   animator: {fileID: 439727740}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &439727738
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14989,6 +15125,9 @@ MonoBehaviour:
   animator: {fileID: 454650594}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &454650592
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15113,6 +15252,9 @@ MonoBehaviour:
   animator: {fileID: 463191233}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &463191231
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15613,6 +15755,9 @@ MonoBehaviour:
   animator: {fileID: 467835198}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &467835196
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15781,6 +15926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1001 &482274045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16236,6 +16382,9 @@ MonoBehaviour:
   animator: {fileID: 489182838}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &489182836
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -16286,6 +16435,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 787625afe6806a14285228e0e805c2aa, type: 3}
   m_PrefabInstance: {fileID: 1910301699}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &490147275
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -4233800277452027359, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: poiType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768191132896637195, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_Name
+      value: POI (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768191132896637195, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 101.01991
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000022888184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 96.02986
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
 --- !u!1 &492430842 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ed7960a7df24cb34facc00cf1f21ff2a, type: 3}
@@ -16360,6 +16574,9 @@ MonoBehaviour:
   animator: {fileID: 492430848}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &492430846
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -16860,6 +17077,9 @@ MonoBehaviour:
   animator: {fileID: 499975107}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &499975105
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17028,6 +17248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &506027601
 GameObject:
   m_ObjectHideFlags: 0
@@ -18835,6 +19056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1001 &533323463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19709,6 +19931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &542895819
 GameObject:
   m_ObjectHideFlags: 0
@@ -19827,6 +20050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!4 &563581219 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7961230358779149238, guid: f4f3ee195d29b9140b38616918b691d0, type: 3}
@@ -20126,6 +20350,9 @@ MonoBehaviour:
   animator: {fileID: 581628415}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &581628413
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20325,6 +20552,9 @@ MonoBehaviour:
   animator: {fileID: 591258910}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &591258908
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20629,6 +20859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &611454070
 GameObject:
   m_ObjectHideFlags: 0
@@ -20837,6 +21068,9 @@ MonoBehaviour:
   animator: {fileID: 613886847}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &613886845
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20961,6 +21195,9 @@ MonoBehaviour:
   animator: {fileID: 620131524}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &620131522
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -21129,6 +21366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &637907026 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ed7960a7df24cb34facc00cf1f21ff2a, type: 3}
@@ -21203,6 +21441,9 @@ MonoBehaviour:
   animator: {fileID: 637907032}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &637907030
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22140,6 +22381,9 @@ MonoBehaviour:
   animator: {fileID: 658123985}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &658123983
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22334,6 +22578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &673159502
 GameObject:
   m_ObjectHideFlags: 0
@@ -22452,6 +22697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &676801488 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ac17dfcee8101734aa663d460c3011cb, type: 3}
@@ -22526,6 +22772,9 @@ MonoBehaviour:
   animator: {fileID: 676801494}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &676801492
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22730,6 +22979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1001 &702097479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23224,6 +23474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -23526,6 +23777,9 @@ MonoBehaviour:
   animator: {fileID: 717520483}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &717520481
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23655,6 +23909,9 @@ MonoBehaviour:
   animator: {fileID: 728056304}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &728056302
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23779,6 +24036,9 @@ MonoBehaviour:
   animator: {fileID: 733071449}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &733071447
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23929,6 +24189,9 @@ MonoBehaviour:
   animator: {fileID: 738083364}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &738083362
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24234,6 +24497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1001 &754327306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25206,6 +25470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &786858286 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 75b91f77c01bef143bab03fe079eaeb2, type: 3}
@@ -25255,6 +25520,9 @@ MonoBehaviour:
   animator: {fileID: 786858289}
   target: {fileID: 702967784}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &786858291
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -26462,6 +26730,71 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 463191228}
   m_SourcePrefab: {fileID: 100100000, guid: 787625afe6806a14285228e0e805c2aa, type: 3}
+--- !u!1001 &813412434
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -4233800277452027359, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: poiType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768191132896637195, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_Name
+      value: POI (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768191132896637195, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 86.663536
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 107.97565
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
 --- !u!1001 &815798742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27712,6 +28045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &836961426 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 787625afe6806a14285228e0e805c2aa, type: 3}
@@ -27786,6 +28120,9 @@ MonoBehaviour:
   animator: {fileID: 836961432}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &836961430
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -27910,6 +28247,9 @@ MonoBehaviour:
   animator: {fileID: 839229709}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &839229707
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -28034,6 +28374,9 @@ MonoBehaviour:
   animator: {fileID: 851390361}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &851390359
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -28918,6 +29261,9 @@ MonoBehaviour:
   animator: {fileID: 868887621}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &868887619
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -29086,6 +29432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!4 &882809382 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5848117526947013626, guid: b64baa0d0c7c85847b3df382d291e3ab, type: 3}
@@ -29209,6 +29556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &893843839 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1007323541564648154, guid: 75b91f77c01bef143bab03fe079eaeb2, type: 3}
@@ -29309,6 +29657,9 @@ MonoBehaviour:
   animator: {fileID: 895865307}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &895865305
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -29796,6 +30147,71 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b64baa0d0c7c85847b3df382d291e3ab, type: 3}
+--- !u!1001 &916387102
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -4233800277452027359, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: poiType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768191132896637195, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_Name
+      value: POI (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768191132896637195, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 87.68148
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000034332275
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 84.72806
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
 --- !u!1001 &919477629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30629,6 +31045,9 @@ MonoBehaviour:
   animator: {fileID: 932700216}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &932700214
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -30907,6 +31326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1001 &952841389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31696,6 +32116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &974597661
 GameObject:
   m_ObjectHideFlags: 0
@@ -32270,6 +32691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &979713971
 GameObject:
   m_ObjectHideFlags: 0
@@ -32420,6 +32842,9 @@ MonoBehaviour:
   animator: {fileID: 979945019}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &979945017
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -32920,6 +33345,9 @@ MonoBehaviour:
   animator: {fileID: 984030922}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &984030920
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -33467,6 +33895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1001 &1000112668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33961,6 +34390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1004430944
 GameObject:
   m_ObjectHideFlags: 0
@@ -34175,6 +34605,9 @@ MonoBehaviour:
   animator: {fileID: 1016597824}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1016597822
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -34795,6 +35228,9 @@ MonoBehaviour:
   animator: {fileID: 1036804496}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1036804494
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -34980,6 +35416,9 @@ MonoBehaviour:
   animator: {fileID: 1044463905}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1044463903
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -35104,6 +35543,9 @@ MonoBehaviour:
   animator: {fileID: 1047127523}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1047127521
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -35308,6 +35750,9 @@ MonoBehaviour:
   animator: {fileID: 1080518162}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1080518160
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -35432,6 +35877,9 @@ MonoBehaviour:
   animator: {fileID: 1085338903}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1085338901
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -35600,6 +36048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1001 &1089768015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36050,6 +36499,9 @@ MonoBehaviour:
   animator: {fileID: 1093901491}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1093901489
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -36218,6 +36670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1106283867
 GameObject:
   m_ObjectHideFlags: 0
@@ -36336,6 +36789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1106564687 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ed7960a7df24cb34facc00cf1f21ff2a, type: 3}
@@ -36410,6 +36864,9 @@ MonoBehaviour:
   animator: {fileID: 1106564693}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1106564691
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -36744,6 +37201,9 @@ MonoBehaviour:
   animator: {fileID: 1119764906}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1119764904
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -37363,6 +37823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1125653150
 GameObject:
   m_ObjectHideFlags: 0
@@ -37481,6 +37942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1132059841 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 787625afe6806a14285228e0e805c2aa, type: 3}
@@ -37555,6 +38017,9 @@ MonoBehaviour:
   animator: {fileID: 1132059847}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1132059845
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -37679,6 +38144,9 @@ MonoBehaviour:
   animator: {fileID: 1139158470}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1139158468
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -37908,6 +38376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1150952111
 GameObject:
   m_ObjectHideFlags: 0
@@ -38026,6 +38495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1152633671 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 787625afe6806a14285228e0e805c2aa, type: 3}
@@ -38100,6 +38570,9 @@ MonoBehaviour:
   animator: {fileID: 1152633677}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1152633675
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -38600,6 +39073,9 @@ MonoBehaviour:
   animator: {fileID: 1154283406}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1154283404
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -38724,6 +39200,9 @@ MonoBehaviour:
   animator: {fileID: 1163630471}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1163630469
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -38892,6 +39371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1165460644 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 787625afe6806a14285228e0e805c2aa, type: 3}
@@ -38966,6 +39446,9 @@ MonoBehaviour:
   animator: {fileID: 1165460650}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1165460648
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -39134,6 +39617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1179643886
 GameObject:
   m_ObjectHideFlags: 0
@@ -39421,6 +39905,9 @@ MonoBehaviour:
   animator: {fileID: 1183314428}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1183314426
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -39925,6 +40412,9 @@ MonoBehaviour:
   animator: {fileID: 1194082748}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1194082746
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -39990,7 +40480,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1197739330
 Transform:
   m_ObjectHideFlags: 0
@@ -41321,6 +41811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1239206822
 GameObject:
   m_ObjectHideFlags: 0
@@ -41918,6 +42409,9 @@ MonoBehaviour:
   animator: {fileID: 1243491539}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1243491537
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -42042,6 +42536,9 @@ MonoBehaviour:
   animator: {fileID: 1246378542}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1246378540
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -42210,6 +42707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1247937576
 GameObject:
   m_ObjectHideFlags: 0
@@ -43229,6 +43727,9 @@ MonoBehaviour:
   animator: {fileID: 1268415629}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1268415627
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -44108,6 +44609,9 @@ MonoBehaviour:
   animator: {fileID: 1280886009}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1280886007
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -44988,6 +45492,9 @@ MonoBehaviour:
   animator: {fileID: 1288008056}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1288008054
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -45112,6 +45619,9 @@ MonoBehaviour:
   animator: {fileID: 1295753866}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1295753864
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -45211,6 +45721,9 @@ MonoBehaviour:
   animator: {fileID: 1300091917}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1300091919
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -45360,6 +45873,9 @@ MonoBehaviour:
   animator: {fileID: 1302602395}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1302602393
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -45528,6 +46044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1306615720 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1007323541564648154, guid: 75b91f77c01bef143bab03fe079eaeb2, type: 3}
@@ -45628,6 +46145,9 @@ MonoBehaviour:
   animator: {fileID: 1308172511}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1308172509
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -45845,6 +46365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1001 &1314255247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45980,6 +46501,9 @@ MonoBehaviour:
   animator: {fileID: 1320662658}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1320662656
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -46104,6 +46628,9 @@ MonoBehaviour:
   animator: {fileID: 1327601410}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1327601408
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -46183,7 +46710,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071067, y: 0.000000030908616, z: -0.000000030908623, w: 0.7071068}
   m_LocalPosition: {x: 31.9863, y: 19.254, z: 1.9646}
-  m_LocalScale: {x: 2.0125, y: 3.9692326, z: 135.69504}
+  m_LocalScale: {x: 2.0125, y: 5.1068144, z: 135.69504}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 563581219}
@@ -46333,6 +46860,9 @@ MonoBehaviour:
   animator: {fileID: 1348804700}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1348804698
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -46582,6 +47112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1360265197
 GameObject:
   m_ObjectHideFlags: 0
@@ -46790,6 +47321,9 @@ MonoBehaviour:
   animator: {fileID: 1362619277}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1362619275
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -46914,6 +47448,9 @@ MonoBehaviour:
   animator: {fileID: 1366033264}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1366033262
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -47038,6 +47575,9 @@ MonoBehaviour:
   animator: {fileID: 1366313799}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1366313797
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -47232,6 +47772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1001 &1393881894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47682,6 +48223,9 @@ MonoBehaviour:
   animator: {fileID: 1399645975}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1399645973
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -47806,6 +48350,9 @@ MonoBehaviour:
   animator: {fileID: 1407204280}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1407204278
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -48306,6 +48853,9 @@ MonoBehaviour:
   animator: {fileID: 1411032547}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1411032545
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -50493,6 +51043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1443292718
 GameObject:
   m_ObjectHideFlags: 0
@@ -52919,6 +53470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1001 &1536081177
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53009,7 +53561,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.50000876, y: 0.49999017, z: 0.49999216, w: 0.5000089}
   m_LocalPosition: {x: -43.4211, y: -31.2, z: 2}
-  m_LocalScale: {x: 2.0125, y: 3.9692326, z: 87.01553}
+  m_LocalScale: {x: 2.0125, y: 5.1068144, z: 87.01553}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 563581219}
@@ -53159,6 +53711,9 @@ MonoBehaviour:
   animator: {fileID: 1546609784}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1546609782
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -53327,6 +53882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!4 &1559742499 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5848117526947013626, guid: b64baa0d0c7c85847b3df382d291e3ab, type: 3}
@@ -53406,6 +53962,9 @@ MonoBehaviour:
   animator: {fileID: 1568991219}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1568991217
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -53530,6 +54089,9 @@ MonoBehaviour:
   animator: {fileID: 1581911920}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1581911918
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -53698,6 +54260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!4 &1609213095 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5848117526947013626, guid: b64baa0d0c7c85847b3df382d291e3ab, type: 3}
@@ -54200,6 +54763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1001 &1620962089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54720,6 +55284,9 @@ MonoBehaviour:
   animator: {fileID: 1626239189}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1626239187
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -54844,6 +55411,9 @@ MonoBehaviour:
   animator: {fileID: 1628057027}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1628057025
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -56300,6 +56870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1001 &1664254725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57130,6 +57701,9 @@ MonoBehaviour:
   animator: {fileID: 1681052084}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1681052082
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -57298,6 +57872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1693429335
 GameObject:
   m_ObjectHideFlags: 0
@@ -57416,6 +57991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1702663494
 GameObject:
   m_ObjectHideFlags: 0
@@ -57645,6 +58221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1704007115
 GameObject:
   m_ObjectHideFlags: 0
@@ -58618,6 +59195,9 @@ MonoBehaviour:
   animator: {fileID: 1721091633}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1721091631
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -58742,6 +59322,9 @@ MonoBehaviour:
   animator: {fileID: 1723440750}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1723440748
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -58866,6 +59449,9 @@ MonoBehaviour:
   animator: {fileID: 1727873613}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1727873611
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -59641,6 +60227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!4 &1748911511 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5848117526947013626, guid: b64baa0d0c7c85847b3df382d291e3ab, type: 3}
@@ -60472,6 +61059,9 @@ MonoBehaviour:
   animator: {fileID: 1772591515}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1772591513
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -60596,6 +61186,9 @@ MonoBehaviour:
   animator: {fileID: 1773510411}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1773510409
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -61122,6 +61715,9 @@ MonoBehaviour:
   animator: {fileID: 1780428339}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1780428337
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -61797,6 +62393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1830342307 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ac17dfcee8101734aa663d460c3011cb, type: 3}
@@ -61846,6 +62443,9 @@ MonoBehaviour:
   animator: {fileID: 1830342310}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1830342312
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -63511,6 +64111,9 @@ MonoBehaviour:
   animator: {fileID: 1856320548}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1856320546
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -64059,6 +64662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1862517642 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ac17dfcee8101734aa663d460c3011cb, type: 3}
@@ -64133,6 +64737,9 @@ MonoBehaviour:
   animator: {fileID: 1862517648}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1862517646
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -64633,6 +65240,9 @@ MonoBehaviour:
   animator: {fileID: 1881229484}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1881229482
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -64712,7 +65322,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.50000876, y: 0.49999017, z: 0.49999216, w: 0.5000089}
   m_LocalPosition: {x: -32.6, y: 85.74, z: 2}
-  m_LocalScale: {x: 2.0125, y: 3.9692326, z: 135.69504}
+  m_LocalScale: {x: 2.0125, y: 5.1068144, z: 135.69504}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 563581219}
@@ -66521,6 +67131,9 @@ MonoBehaviour:
   animator: {fileID: 1923560045}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1923560043
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -66689,6 +67302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1001 &1934114161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67139,6 +67753,9 @@ MonoBehaviour:
   animator: {fileID: 1937611465}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1937611463
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -67263,6 +67880,9 @@ MonoBehaviour:
   animator: {fileID: 1939128976}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1939128974
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -67387,6 +68007,9 @@ MonoBehaviour:
   animator: {fileID: 1952413514}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1952413512
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -67511,6 +68134,9 @@ MonoBehaviour:
   animator: {fileID: 1956695215}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1956695213
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -68768,6 +69394,71 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1411032542}
   m_SourcePrefab: {fileID: 100100000, guid: ac17dfcee8101734aa663d460c3011cb, type: 3}
+--- !u!1001 &1971894230
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -4233800277452027359, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: poiType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768191132896637195, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_Name
+      value: POI (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768191132896637195, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 98.86138
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000015258789
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 72.72195
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
 --- !u!1 &1975767271
 GameObject:
   m_ObjectHideFlags: 0
@@ -69095,6 +69786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1991113195
 GameObject:
   m_ObjectHideFlags: 0
@@ -69213,6 +69905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1993617534
 GameObject:
   m_ObjectHideFlags: 0
@@ -69331,6 +70024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &1994020629 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ac17dfcee8101734aa663d460c3011cb, type: 3}
@@ -69405,6 +70099,9 @@ MonoBehaviour:
   animator: {fileID: 1994020635}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &1994020633
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -69590,6 +70287,9 @@ MonoBehaviour:
   animator: {fileID: 2013865912}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &2013865910
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -69714,6 +70414,9 @@ MonoBehaviour:
   animator: {fileID: 2014680769}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &2014680767
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -69838,6 +70541,9 @@ MonoBehaviour:
   animator: {fileID: 2023487080}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &2023487078
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -69962,6 +70668,9 @@ MonoBehaviour:
   animator: {fileID: 2026739788}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &2026739786
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -70130,6 +70839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!1 &2041226676 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1007323541564648154, guid: 75b91f77c01bef143bab03fe079eaeb2, type: 3}
@@ -70291,6 +71001,9 @@ MonoBehaviour:
   animator: {fileID: 2050785037}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &2050785035
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -70476,6 +71189,9 @@ MonoBehaviour:
   animator: {fileID: 2054495775}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &2054495773
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -70665,6 +71381,9 @@ MonoBehaviour:
   animator: {fileID: 2063163473}
   target: {fileID: 702967784}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &2063163471
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -72549,6 +73268,9 @@ MonoBehaviour:
   animator: {fileID: 2117502945}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &2117502943
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -72699,6 +73421,9 @@ MonoBehaviour:
   animator: {fileID: 2127391084}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &2127391082
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -72823,6 +73548,9 @@ MonoBehaviour:
   animator: {fileID: 2131670761}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &2131670759
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -72947,6 +73675,9 @@ MonoBehaviour:
   animator: {fileID: 2138299379}
   target: {fileID: 0}
   waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
 --- !u!195 &2138299377
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -73411,6 +74142,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129edd62b5d88c14e80dda39819fe0be, type: 3}
+--- !u!1001 &7695355850764232298
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8230034142328732072, guid: cf326d9160951214b9c48ce6a8793502, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -141.40141
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230034142328732072, guid: cf326d9160951214b9c48ce6a8793502, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -49.145634
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230034142328732072, guid: cf326d9160951214b9c48ce6a8793502, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20.36417
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230034142328732072, guid: cf326d9160951214b9c48ce6a8793502, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230034142328732072, guid: cf326d9160951214b9c48ce6a8793502, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230034142328732072, guid: cf326d9160951214b9c48ce6a8793502, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230034142328732072, guid: cf326d9160951214b9c48ce6a8793502, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230034142328732072, guid: cf326d9160951214b9c48ce6a8793502, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230034142328732072, guid: cf326d9160951214b9c48ce6a8793502, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230034142328732072, guid: cf326d9160951214b9c48ce6a8793502, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430358615858516188, guid: cf326d9160951214b9c48ce6a8793502, type: 3}
+      propertyPath: m_Name
+      value: SceneTypeManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cf326d9160951214b9c48ce6a8793502, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -73432,3 +74220,9 @@ SceneRoots:
   - {fileID: 1815828037}
   - {fileID: 92756657}
   - {fileID: 2055141957}
+  - {fileID: 7695355850764232298}
+  - {fileID: 325250899}
+  - {fileID: 916387102}
+  - {fileID: 813412434}
+  - {fileID: 1971894230}
+  - {fileID: 490147275}
