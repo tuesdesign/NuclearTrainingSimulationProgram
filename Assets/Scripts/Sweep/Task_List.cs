@@ -17,13 +17,25 @@ public class Task_List : MonoBehaviour
     void Start()
     {
         GameObject[] clusterNavigators = GameObject.FindGameObjectsWithTag("Security");
+        GameObject[] vans = GameObject.FindGameObjectsWithTag("Van");
 
+        // Add security objects to the list
         foreach (var gameObject in clusterNavigators)
         {
             SweepNavigator navigator = gameObject.GetComponent<SweepNavigator>();
             if (navigator != null)
             {
                 security.Add(navigator);
+            }
+        }
+
+        // Add Van objects to the list
+        foreach (var van in vans)
+        {
+            SweepNavigator vanNavigator = van.GetComponent<SweepNavigator>();
+            if (vanNavigator != null)
+            {
+                security.Add(vanNavigator);
             }
         }
     }
@@ -37,8 +49,21 @@ public class Task_List : MonoBehaviour
                 mode.text = "Patrol";
                 foreach (SweepNavigator change in security)
                 {
-                        change.newRole(Role.Patrol);
+                    change.newRole(Role.Patrol);
+                    if (change.Role() != SecurityRole.Patrol)
+                    {
+                        if (change.CompareTag("Van"))
+                        {
+                            change.transform.rotation = Quaternion.Euler(-90, 0, 0);
+                        }
+                        else
+                        {
+                            change.transform.rotation = Quaternion.Euler(0, 0, 0);
+                        }
+                        change.stop();
+                    }
                 }
+
                 break;
             case 1 :
                 mode.text = "Stadium Sweep";
@@ -47,6 +72,12 @@ public class Task_List : MonoBehaviour
                     if (change.Role() == SecurityRole.Stadium)
                     {
                         change.newRole(Role.Stadium);
+                        change.go();
+                    }
+
+                    if (change.CompareTag("Van"))
+                    {
+                        LockVanRotationToDestination(change);
                     }
                 }
                 break;
@@ -57,12 +88,38 @@ public class Task_List : MonoBehaviour
                     if (change.Role() == SecurityRole.ParkingLot)
                     {
                         change.newRole(Role.ParkingLot);
+                        change.go();
+                    }
+
+                    if (change.CompareTag("Van"))
+                    {
+                        LockVanRotationToDestination(change);
                     }
                 }
                 break;
         }
     }
 
+    private void LockVanRotationToDestination(SweepNavigator navigator)
+    {
+        NavMeshAgent agent = navigator.GetComponent<NavMeshAgent>();
+
+        if (agent.pathPending || agent.remainingDistance > agent.stoppingDistance)
+        {
+            Vector3 targetDirection = agent.steeringTarget - agent.transform.position;
+
+            if (targetDirection.sqrMagnitude > 0.0f)
+            {
+                Quaternion targetRotation = Quaternion.LookRotation(targetDirection);
+
+                // Lock the X-axis to -90 while allowing Y and Z axes to rotate
+                targetRotation = Quaternion.Euler(-90, targetRotation.eulerAngles.y, targetRotation.eulerAngles.z);
+
+                agent.transform.rotation =
+                    Quaternion.Slerp(agent.transform.rotation, targetRotation, Time.deltaTime * 5f);
+            }
+        }
+    }
     public void changeMode(int mode)
     {
         sweepMode = mode;

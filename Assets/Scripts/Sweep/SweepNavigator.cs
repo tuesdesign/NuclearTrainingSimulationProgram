@@ -81,6 +81,16 @@ public class SweepNavigator : MonoBehaviour
         return role;
     }
 
+    public void stop()
+    {
+        agent.isStopped = true;
+    }
+
+    public void go()
+    {
+        agent.isStopped = false;
+    }
+
     void Update()
     {
         if (IsAtTarget()) 

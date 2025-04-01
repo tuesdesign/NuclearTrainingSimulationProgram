@@ -9,6 +9,7 @@ TagManager:
   - Detector
   - Interactive
   - Security
+  - Van
   layers:
   - Default
   - TransparentFX
