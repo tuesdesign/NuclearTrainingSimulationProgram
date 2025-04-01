@@ -121,6 +121,7 @@ MonoBehaviour:
   parentBoothManager: {fileID: 0}
   assignedPerson: {fileID: 0}
   canServe: 0
-  servingDistance: 1.25
+  servingDistance: 2
   servingTime: 0
   servingTimeLeft: 0
+  serving: 0

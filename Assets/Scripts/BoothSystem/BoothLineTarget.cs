@@ -6,11 +6,11 @@ public class BoothLineTarget : MonoBehaviour
 {
     [SerializeField] BoothManager parentBoothManager;
     public PersonNavigator assignedPerson;
-    [SerializeField] bool canServe;
+    [SerializeField] public bool canServe;
     [SerializeField, Range(1.25f, 5f)] float servingDistance;
     public float servingTime;
     public float servingTimeLeft;
-    bool serving;
+    public bool serving;
 
 
     public void SetParentBoothManager(BoothManager boothManager)
@@ -39,7 +39,9 @@ public class BoothLineTarget : MonoBehaviour
     {
         serving = true;
         yield return new WaitForSeconds(servingTime);
+        assignedPerson.waiting = false;
         assignedPerson.SetNewTarget();
+        
         parentBoothManager.RemovePersonInLine(assignedPerson);
         serving = false;
 
