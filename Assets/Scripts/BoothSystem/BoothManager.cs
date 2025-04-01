@@ -68,17 +68,8 @@ public class BoothManager : PointOfInterestBehaviour
 
         }
 
-        //Warn user if booth doesn't have a target that can serve people
-        bool canAnyoneServe = false;
-        foreach (BoothLineTarget target in boothLineTargets) {
-            if(target.canServe == true)
-            {
-                canAnyoneServe = true;
-            }
-        }
-        if (!canAnyoneServe) {
-            Debug.LogWarning("No one can serve in this booth");
-        }
+        //Force the first booth line target to be able to serve
+        boothLineTargets[0].canServe = true;
 
     }
 
