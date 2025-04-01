@@ -2232,6 +2232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 101197830}
   - component: {fileID: 101197831}
+  - component: {fileID: 101197832}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -2312,9 +2313,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 325422609}
-        m_TargetAssemblyTypeName: ObjectScaleProperty, Assembly-CSharp
-        m_MethodName: ScaleObject
+      - m_Target: {fileID: 101197832}
+        m_TargetAssemblyTypeName: RadiationDeviceRandomizer, Assembly-CSharp
+        m_MethodName: ScaleNuclearDevice
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2324,6 +2325,23 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &101197832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101197829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dcc3328c026f5e4bb23d22b76be3df1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  personArray: []
+  maxIndexOfPersonWithDevice: 100
+  indexOfPersonWithDevice: 0
+  nuclearDevicePrefab: {fileID: 4682149994981697758, guid: 129edd62b5d88c14e80dda39819fe0be, type: 3}
+  nuclearDevice: {fileID: 0}
 --- !u!4 &104808343 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
@@ -10856,6 +10874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 579872171}
+  - component: {fileID: 579872172}
   m_Layer: 0
   m_Name: Civilians
   m_TagString: Untagged
@@ -10991,6 +11010,23 @@ Transform:
   - {fileID: 1407204281}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &579872172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579872170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dcc3328c026f5e4bb23d22b76be3df1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  personArray: []
+  maxIndexOfPersonWithDevice: 100
+  indexOfPersonWithDevice: 0
+  nuclearDevicePrefab: {fileID: 4682149994981697758, guid: 129edd62b5d88c14e80dda39819fe0be, type: 3}
+  nuclearDevice: {fileID: 0}
 --- !u!1 &581628409 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 787625afe6806a14285228e0e805c2aa, type: 3}
