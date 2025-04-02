@@ -77,7 +77,7 @@ public class Task_List : MonoBehaviour
 
                     if (change.CompareTag("Van"))
                     {
-                        LockVanRotationToDestination(change);
+                        VanTurn(change);
                     }
                 }
                 break;
@@ -93,14 +93,14 @@ public class Task_List : MonoBehaviour
 
                     if (change.CompareTag("Van"))
                     {
-                        LockVanRotationToDestination(change);
+                        VanTurn(change);
                     }
                 }
                 break;
         }
     }
 
-    private void LockVanRotationToDestination(SweepNavigator navigator)
+    private void VanTurn(SweepNavigator navigator)
     {
         NavMeshAgent agent = navigator.GetComponent<NavMeshAgent>();
 
@@ -110,13 +110,12 @@ public class Task_List : MonoBehaviour
 
             if (targetDirection.sqrMagnitude > 0.0f)
             {
+                // Set rotation directly towards the destination while keeping the X-axis fixed to -90
                 Quaternion targetRotation = Quaternion.LookRotation(targetDirection);
-
-                // Lock the X-axis to -90 while allowing Y and Z axes to rotate
                 targetRotation = Quaternion.Euler(-90, targetRotation.eulerAngles.y, targetRotation.eulerAngles.z);
 
-                agent.transform.rotation =
-                    Quaternion.Slerp(agent.transform.rotation, targetRotation, Time.deltaTime * 5f);
+                // Set the rotation hard to the calculated target rotation
+                agent.transform.rotation = targetRotation;
             }
         }
     }
