@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5265207034323125312}
   m_Layer: 0
   m_Name: ParkingPoint
-  m_TagString: POI
+  m_TagString: ParkingPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f51b20622d6e4a9a63a7b60ebc8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poiType: 0
 --- !u!114 &5265207034323125312
 MonoBehaviour:
   m_ObjectHideFlags: 0

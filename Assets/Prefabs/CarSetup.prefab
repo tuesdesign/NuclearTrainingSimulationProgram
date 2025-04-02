@@ -203,6 +203,9 @@ MonoBehaviour:
   sceneTypeManager: {fileID: 0}
   currentSceneType: 0
   currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
   peoplePrefab: {fileID: 6302984990018374789, guid: 50b30f355d21b2a4a9169c041e304136, type: 3}
   numberOfPeople: 3
   carPOI: {fileID: 4809016623006627841}
@@ -232,7 +235,7 @@ Transform:
   m_GameObject: {fileID: 6942209658988871420}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.323, z: -2.774}
+  m_LocalPosition: {x: 0, y: 0.323, z: -3.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -272,7 +275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.975
+      value: -2.67
       objectReference: {fileID: 0}
     - target: {fileID: 5848117526947013626, guid: 83aefe41858682c45aa2ef27870c480e, type: 3}
       propertyPath: m_LocalRotation.w

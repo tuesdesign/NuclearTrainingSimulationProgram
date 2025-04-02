@@ -175,8 +175,7 @@ public class PersonNavigator : MonoBehaviour
         animator.SetBool("Walking", true); // Set the animator to walking
         agent.SetDestination(target.position); // Then, set the agent's destination to it
 
-        //If person was dropping off, go back to picking up from vehicles.
-        SwitchTargetTypeDuringSetup();
+        
         
 
     }
@@ -199,7 +198,10 @@ public class PersonNavigator : MonoBehaviour
             //animator.Play("Idle"); // Play the idle animation
             if (!waiting)
             {
+                //If person was dropping off, go back to picking up from vehicles.
+                SwitchTargetTypeDuringSetup();
                 SetNewTarget(); // This one's just a sentence.
+
             }
         }
 
