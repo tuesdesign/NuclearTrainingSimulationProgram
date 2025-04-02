@@ -219,7 +219,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 31704886}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &31704884
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -520,7 +530,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 39956560}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &39956558
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -641,7 +661,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 45661969}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &45661967
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -762,7 +792,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 55424551}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &55424549
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -995,7 +1035,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 59044425}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &59044423
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1394,7 +1444,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 82554454}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &82554456
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2099,7 +2159,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 112725915}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &112725913
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2162,9 +2232,9 @@ GameObject:
   - component: {fileID: 116223001}
   - component: {fileID: 116223000}
   - component: {fileID: 116223003}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3045,7 +3115,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 170703899}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &170703897
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3166,7 +3246,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 183109172}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &183109170
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3614,7 +3704,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 223578373}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &223578371
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3735,7 +3835,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 245086756}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &245086754
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4012,6 +4122,140 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &258303260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 258303261}
+  - component: {fileID: 258303263}
+  - component: {fileID: 258303262}
+  m_Layer: 5
+  m_Name: AvailableText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &258303261
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258303260}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 354240704}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -258.1548, y: 265.4121}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &258303262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258303260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 25
+  m_fontSizeBase: 25
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &258303263
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258303260}
+  m_CullTransparentMesh: 1
 --- !u!1001 &261226516
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4165,7 +4409,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 272523882}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &272523880
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4480,7 +4734,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 296163206}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &296163204
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5007,7 +5271,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 325136014}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &325136012
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5425,7 +5699,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 340877860}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &340877858
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5546,7 +5830,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 343347529}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &343347527
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5777,6 +6071,8 @@ RectTransform:
   m_Children:
   - {fileID: 1247937577}
   - {fileID: 964182882}
+  - {fileID: 258303261}
+  - {fileID: 1333554059}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6042,7 +6338,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 375419540}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &375419538
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6268,7 +6574,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 383473179}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &383473177
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6574,7 +6890,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 420809921}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &420809919
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6962,7 +7288,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 439727740}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &439727738
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7188,7 +7524,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 454650594}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &454650592
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7309,7 +7655,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 463191233}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &463191231
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7514,7 +7870,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 467835198}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &467835196
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7820,7 +8186,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 489182838}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &489182836
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7941,7 +8317,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 492430848}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &492430846
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8146,7 +8532,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 499975107}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &499975105
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -9646,7 +10042,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 581628415}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &581628413
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -9842,7 +10248,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 591258910}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &591258908
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10338,7 +10754,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 613886847}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &613886845
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10459,7 +10885,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 620131524}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &620131522
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10685,7 +11121,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 637907032}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &637907030
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10970,7 +11416,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 658123985}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &658123983
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11327,7 +11783,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 676801494}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &676801492
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11872,7 +12338,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 717520483}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &717520481
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11998,7 +12474,17 @@ MonoBehaviour:
   - {fileID: 0}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 728056304}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &728056302
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12119,7 +12605,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 733071449}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &733071447
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12266,7 +12762,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 738083364}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &738083362
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12914,7 +13420,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 786858289}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &786858291
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13661,7 +14177,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 836961432}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &836961430
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13782,7 +14308,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 839229709}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &839229707
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13903,7 +14439,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 851390361}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &851390359
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14192,7 +14738,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 868887621}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &868887619
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14348,6 +14904,140 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869247179}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &877296511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 877296512}
+  - component: {fileID: 877296514}
+  - component: {fileID: 877296513}
+  m_Layer: 5
+  m_Name: Button Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &877296512
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877296511}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1333554059}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &877296513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877296511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: First Person Mode
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &877296514
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877296511}
+  m_CullTransparentMesh: 1
 --- !u!1 &891531263
 GameObject:
   m_ObjectHideFlags: 0
@@ -14549,7 +15239,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 895865307}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &895865305
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14917,7 +15617,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 932700216}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &932700214
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15183,6 +15893,88 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936360561}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &947148230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 947148231}
+  - component: {fileID: 947148233}
+  - component: {fileID: 947148232}
+  m_Layer: 0
+  m_Name: User
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &947148231
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947148230}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: -2.8, y: 30.9, z: 32.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 963194228}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: -90, z: 0}
+--- !u!143 &947148232
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947148230}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &947148233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947148230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf988783c179ee468180dff78361c9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4096
+  buttonText: {fileID: 877296513}
+  availableText: {fileID: 258303262}
+  cameraXMovement: {fileID: 630334845083777093, guid: 28956ea8ee387964d97d0d17ddb41983, type: 3}
+  cameraYMovement: {fileID: -5367835252326684512, guid: 28956ea8ee387964d97d0d17ddb41983, type: 3}
+  playerMovement: {fileID: 7947203340399460874, guid: 28956ea8ee387964d97d0d17ddb41983, type: 3}
+  Click: {fileID: 1057746163032265545, guid: 28956ea8ee387964d97d0d17ddb41983, type: 3}
+  controller: {fileID: 947148232}
 --- !u!1001 &952841389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15353,13 +16145,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -2.8, y: 30.9, z: 32.2}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 90, y: -90, z: 0}
+  m_Father: {fileID: 947148231}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16013,7 +16805,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 979945019}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &979945017
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -16218,7 +17020,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 984030922}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &984030920
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -16791,7 +17603,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1016597824}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1016597822
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17001,7 +17823,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1036804496}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1036804494
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17122,7 +17954,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1044463905}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1044463903
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17243,7 +18085,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1047127523}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1047127521
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17439,7 +18291,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1080518162}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1080518160
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17560,7 +18422,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1085338903}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1085338901
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17870,7 +18742,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1093901491}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1093901489
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -18201,7 +19083,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1106564693}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1106564691
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -18471,7 +19363,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1119764906}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1119764904
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -18961,7 +19863,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1132059847}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1132059845
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -19082,7 +19994,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1139158470}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1139158468
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -19413,7 +20335,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1152633677}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1152633675
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -19614,7 +20546,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1154283406}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1154283404
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -19735,7 +20677,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1163630471}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1163630469
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -19961,7 +20913,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1165460650}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1165460648
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20266,7 +21228,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1183314428}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1183314426
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20471,7 +21443,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1194082748}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1194082746
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -21120,7 +22102,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1243491539}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1243491537
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -21241,7 +22233,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1246378542}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1246378540
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -21819,7 +22821,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1268415629}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1268415627
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22103,7 +23115,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1280886009}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1280886007
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22388,7 +23410,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1288008056}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1288008054
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22509,7 +23541,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1295753866}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1295753864
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22605,7 +23647,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1300091917}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1300091919
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22751,7 +23803,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1302602395}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1302602393
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23003,7 +24065,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1308172511}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1308172509
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23278,7 +24350,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1320662658}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1320662656
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23399,7 +24481,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1327601410}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1327601408
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23450,6 +24542,139 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ac17dfcee8101734aa663d460c3011cb, type: 3}
   m_PrefabInstance: {fileID: 1706366543}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1333554058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1333554059}
+  - component: {fileID: 1333554063}
+  - component: {fileID: 1333554062}
+  - component: {fileID: 1333554061}
+  m_Layer: 5
+  m_Name: First Person Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1333554059
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333554058}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 877296512}
+  m_Father: {fileID: 354240704}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 100}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &1333554061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333554058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0.060156345, b: 1, a: 1}
+    m_PressedColor: {r: 0, g: 1, b: 0.035513878, a: 1}
+    m_SelectedColor: {r: 1, g: 0.9190924, b: 0, a: 1}
+    m_DisabledColor: {r: 0, g: 0, b: 0, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1333554062}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 947148233}
+        m_TargetAssemblyTypeName: FPSMode, Assembly-CSharp
+        m_MethodName: onPickModeClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1333554062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333554058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1333554063
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333554058}
+  m_CullTransparentMesh: 1
 --- !u!1 &1348804694 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ed7960a7df24cb34facc00cf1f21ff2a, type: 3}
@@ -23520,7 +24745,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1348804700}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1348804698
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23956,7 +25191,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1362619277}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1362619275
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24077,7 +25322,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1366033264}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1366033262
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24198,7 +25453,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1366313799}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1366313797
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24534,7 +25799,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1399645975}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1399645973
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24655,7 +25930,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1407204280}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1407204278
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24856,7 +26141,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1411032547}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1411032545
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -26726,7 +28021,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1546609784}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1546609782
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -26952,7 +28257,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1568991219}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1568991217
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -27073,7 +28388,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1581911920}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1581911918
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -27571,7 +28896,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1626239189}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1626239187
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -27692,7 +29027,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1628057027}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1628057025
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -28490,7 +29835,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1681052084}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1681052082
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -29200,7 +30555,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1721091633}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1721091631
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -29321,7 +30686,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1723440750}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1723440748
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -29442,7 +30817,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1727873613}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1727873611
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -30143,7 +31528,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1772591515}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1772591513
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -30264,7 +31659,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1773510411}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1773510409
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -30491,7 +31896,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1780428339}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1780428337
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -30772,7 +32187,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1830342310}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1830342312
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -31250,7 +32675,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1856320548}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1856320546
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -31560,7 +32995,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1862517648}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1862517646
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -31761,7 +33206,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1881229484}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1881229482
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -31822,7 +33277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1897575423}
   - component: {fileID: 1897575422}
-  - component: {fileID: 1897575421}
+  - component: {fileID: 1897575424}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -31830,26 +33285,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1897575421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1897575420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
 --- !u!114 &1897575422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31880,6 +33315,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1897575424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897575420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 2
+  m_CursorLockBehavior: 0
 --- !u!1001 &1908263779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32357,7 +33822,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1923560045}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1923560043
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -32667,7 +34142,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1937611465}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1937611463
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -32788,7 +34273,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1939128976}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1939128974
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -32909,7 +34404,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1952413514}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1952413512
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -33030,7 +34535,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1956695215}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1956695213
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -34002,7 +35517,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 1994020635}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &1994020633
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -34123,7 +35648,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 2013865912}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2013865910
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -34244,7 +35779,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 2014680769}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2014680767
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -34365,7 +35910,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 2023487080}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2023487078
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -34486,7 +36041,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 2026739788}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2026739786
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -34738,7 +36303,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 2050785037}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2050785035
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -34859,7 +36434,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 2054495775}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2054495773
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -34980,7 +36565,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 2063163473}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2063163471
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -35547,7 +37142,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 2117502945}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2117502943
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -35694,7 +37299,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 2.58
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 2127391084}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2127391082
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -35815,7 +37430,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 2131670761}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2131670759
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -35936,7 +37561,17 @@ MonoBehaviour:
   - {fileID: 702967784}
   acceptableDistance: 1
   WaitTime: 1
+  waiting: 0
   animator: {fileID: 2138299379}
+  target: {fileID: 0}
+  maxNumberOfTargetFindTries: 0
+  waypointTag: POI
+  sceneTypeManager: {fileID: 0}
+  currentSceneType: 0
+  currentTargetType: 0
+  chanceToBeAFollower: 0
+  follower: 0
+  personFollowed: {fileID: 0}
 --- !u!195 &2138299377
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -36052,7 +37687,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 963194228}
+  - {fileID: 947148231}
   - {fileID: 705507995}
   - {fileID: 1309397166}
   - {fileID: 1897575423}
