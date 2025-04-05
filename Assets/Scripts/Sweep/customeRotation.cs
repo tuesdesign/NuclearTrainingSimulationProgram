@@ -8,13 +8,11 @@ public class customeRotation : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        agent.updateRotation = false; // Disable automatic rotation
+        agent.updateRotation = false;
     }
 
     void Update()
     {
-        // Your custom rotation logic here, e.g., just keeping the object facing forward
-        // Or not rotating at all if you don't want any rotation
         transform.rotation = Quaternion.Euler(-90, transform.rotation.eulerAngles.y, 0);
     }
 }
